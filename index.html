@@ -530,7 +530,7 @@
 <p>TB正走在改造人类智慧基因的路上。</p>
 <p>TB发现人类智慧基因一点也不萌萌哒，导致人类普遍智商过低，为了拯救低智商人群，博爱的TB开始改造人类智慧基因。</p>
 <p>人类智慧DNA由$C$种人类智慧脱氧核苷酸构成（这是一种十分特殊的DNA）。TB智慧DNA片段$T$长度为$M$，她可以把另一段长度为$M$的人类智慧DNA片段$S$改造成$T$。改造过程中，TB可以充分发挥智慧，将任意两种人类智慧脱氧核苷酸交换（比如对于片段$S=12321$，交换$1$和$2$变成 $S=21312$，交换$1$和$4$变成$42324$），可以无限次交换。如果$S$可以通过若干次交换变成$T$，那么就称$S$为“萌萌哒人类基因片段”。</p>
-<p>TB想知道对于一个长度为$N$的人类智慧DNA片段$S[1 \sim N]$，有多少个长度为$M$的连续子片段$S[i \sim +M-1]$，是“萌萌哒人类基因片段”， 且这些“萌萌哒人类基因片段”在哪里。</p>
+<p>TB想知道对于一个长度为$N$的人类智慧DNA片段$S[1 \sim N]$，有多少个长度为$M$的连续子片段$S[i \sim i+M-1]$，是“萌萌哒人类基因片段”， 且这些“萌萌哒人类基因片段”在哪里。</p>
 <h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><p>输入文件名为<font face="Times New Roman"><strong><em>reform.in</em></strong></font>。</p>
 <p>输入文件的第一行包含两个正整数$case$和$C$，分别表示数据组数和人类智慧脱氧核苷酸的种数。</p>
 <p>接下来$3 \times case$行， 每三行表示一组数据：</p>
@@ -563,7 +563,7 @@
 <li>$S[2 \sim 4]=212$，可以将$2$和$3$交换变成$313$。</li>
 <li>$S[4 \sim 6]=232$，可以先将$2$和$3$交换变成$323$，再将$1$和$2$交换变成$313$。</li>
 </ul>
-<h4 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h4><table><tr><td>测试点编号</td><td>$n, m, C$</td></tr><tr><td>$1$</td><td>$n, m, C \leq 1000$</td></tr><tr><td>$2 \sim 3$</td><td>$n, m \leq 100000, C \leq 40$</td></tr><tr><td>$4 \sim 6$</td><td>$n, m, C \leq 100000$</td></tr><tr><td>7 \sim 10</td><td>$n, m, C \leq 1000000$</td></tr></table>
+<h4 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h4><table><tr><td>测试点编号</td><td>$n, m, C$</td></tr><tr><td>$1$</td><td>$n, m, C \leq 1000$</td></tr><tr><td>$2 \sim 3$</td><td>$n, m \leq 100000, C \leq 40$</td></tr><tr><td>$4 \sim 6$</td><td>$n, m, C \leq 100000$</td></tr><tr><td>$7 \sim 10$</td><td>$n, m, C \leq 1000000$</td></tr></table>
 
 <p>对于所有数据，$case=3$。</p>
 
