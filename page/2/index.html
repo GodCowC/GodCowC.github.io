@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | GodCowC</title>
+  <title>GodCowC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="欢迎访问蒟蒻ChangKe的小站~">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GodCowC">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="GodCowC">
 <meta property="og:description" content="欢迎访问蒟蒻ChangKe的小站~">
 <meta name="twitter:card" content="summary">
@@ -31,6 +31,9 @@
   <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
+    
+    
+  
   
       <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
   
@@ -40,9 +43,9 @@
       var yiliaConfig = {
           fancybox: true,
           animate: false,
-          isHome: false,
+          isHome: true,
           isPost: false,
-          isArchive: true,
+          isArchive: false,
           isTag: false,
           isCategory: false,
           open_in_new: false,
@@ -237,331 +240,647 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-HNSDFZ-Wallace" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2016/07/11/HNSDFZ-Wallace/" class="article-date">
+      <time datetime="2016-07-11T07:00:00.000Z" itemprop="datePublished">2016-07-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/11/HNSDFZ-Wallace/">『湖南省队集训』Wallace</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p align="right"><br>    <em>“看来华莱士先生不太懂历史和哲♂学” ——自长者与美国记者华莱士的谈话</em><br></p>
+
+<p>有两颗各含$N$个点的无根树，每棵树中点分别被编号为$0,1,2,\dots,N-1$；注意两棵树并不保证同构。另外给一个$N$长的整数数组$Score[]$，记录$N$个编号的得分，$Score$中的每个元素可正可负。问题的任务是寻找集合$\{0,1,2,3,4,\dots,N-1\}$的一个最优子集$subset$（可以是空集），要求满足以下条件：</p>
+<ol>
+<li>在第一棵树中，$subset$中包含的编号对应的点能构成一个连通的子图；即去掉这棵树中所有$subset$中不包含的点后，剩下的点依然是一棵连通的树。</li>
+<li>在第二棵树中，$subset$中包含的编号对应的点也能构成一个连通的子图；</li>
+<li>使$subset$包含编号的总得分尽可能的大；即$\sum_{i \in subset}Score[i]$<br>能取到尽可能大的值。</li>
+</ol>
+<p>输入第一行一个正整数$N$。第二行$N$个整数$Score[]$代表$0 \sim N-1$每个点的权值。</p>
+<p>后面$N-1$行每行两个整数$u,v$代表第一棵树里面$u$点和$v$点之间有连边。</p>
+<p>再后面$N-1$行每行两个整数$u,v$代表第二棵树里面$u$点和$v$点之间有连边。</p>
+<p>输出一行一个整数代表这个$subset$包含编号的总分的最大值。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>测试点编号</strong></th>
+<th style="text-align:left"><strong>特征</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$0 \sim 5$</td>
+<td style="text-align:left">$N \leq 15$</td>
+</tr>
+<tr>
+<td style="text-align:left">$6 \sim 9$</td>
+<td style="text-align:left">两棵树形状与编号完全相同</td>
+</tr>
+<tr>
+<td style="text-align:left">$10 \sim 24$</td>
+<td style="text-align:left">$2 \leq N \leq 50$且$-1000 \leq score[i] \leq 1000$且$0 \leq u, v &lt;  N$</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/30/Water-Problems/" class="archive-article-date">
-      <time datetime="2016-07-30T10:31:12.000Z" itemprop="datePublished">07-30</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/30/Water-Problems/">水题记录（更新至20160619）</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/There-should-be-too-many-tags-so-I-don-t-put-them-on/">There should be too many tags so I don't put them on</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/14/hello-world/" class="archive-article-date">
-      <time datetime="2016-07-14T08:52:17.562Z" itemprop="datePublished">07-14</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/14/HApeixunguncu/" class="archive-article-date">
-      <time datetime="2016-07-14T08:52:17.556Z" itemprop="datePublished">07-14</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/14/HApeixunguncu/">河南省队集训滚粗记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
+      
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
     </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/14/HA2016-af-idol/" class="archive-article-date">
-      <time datetime="2016-07-14T08:52:17.551Z" itemprop="datePublished">07-14</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/14/HA2016-af-idol/">『河南省队集训』神盾局和偶像</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AC自动机/">AC自动机</a></li></ul>
+      
+      <div class="clearfix"></div>
     </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+    
   </div>
+  
 </article>
+
+
+
+
+
+
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/13/HNSDFZ-calculator/" class="archive-article-date">
-      <time datetime="2016-07-13T07:00:00.000Z" itemprop="datePublished">07-13</time>
+    <article id="post-HNSDFZ-deepdarkfantasy" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/11/HNSDFZ-deepdarkfantasy/" class="article-date">
+      <time datetime="2016-07-11T06:00:00.000Z" itemprop="datePublished">2016-07-11</time>
 </a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/13/HNSDFZ-calculator/">『湖南省队集训』博士的计算器</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
     </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/13/HNSDFZ-expectation/" class="archive-article-date">
-      <time datetime="2016-07-13T06:00:00.000Z" itemprop="datePublished">07-13</time>
-</a>
-        </div>
-         
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/13/HNSDFZ-expectation/">『湖南省队集训』期望</a>
+      <a class="article-title" href="/2016/07/11/HNSDFZ-deepdarkfantasy/">『湖南省队集训』DeepDarkFantasy</a>
     </h1>
   
 
-        <div class="article-info info-on-archive">
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
           
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p align="right"><br>    <em>从东京出发，不久便到一处驿站，写道：日暮里。 ——鲁迅《藤野先生》</em><br></p>
 
-          
+<p>定义一个置换的平方为对$1 \sim n$的序列做两次该置换得到的序列。已知一个置换的平方，并且这个结果是一个排列， 求该置换。</p>
+<p>输入第一行一个数$n$表示排列长度， 接下来一行$n$个数描述排列。</p>
+<p>有解则输出一行$n$个数表示原排列。 否则输出一行一个$-1$。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>测试点编号</strong></th>
+<th style="text-align:left"><strong>特征</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$0 \sim 1$</td>
+<td style="text-align:left">$n \leq 10$</td>
+</tr>
+<tr>
+<td style="text-align:left">$2 \sim 9$</td>
+<td style="text-align:left">$n \leq 1000000$</td>
+</tr>
+</tbody>
+</table>
+<p>此题有spj。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
     </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/12/HNSDFZ-cw/" class="archive-article-date">
-      <time datetime="2016-07-12T08:00:00.000Z" itemprop="datePublished">07-12</time>
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160618-water" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/18/20160618-water/" class="article-date">
+      <time datetime="2016-06-18T08:00:00.000Z" itemprop="datePublished">2016-06-18</time>
 </a>
-        </div>
-         
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/12/HNSDFZ-cw/">『湖南省队集训』嘿嘿嘿嘿的zy</a>
+      <a class="article-title" href="/2016/06/18/20160618-water/">『Noi2016十连测第三场 - 接水问题』</a>
     </h1>
   
 
-        <div class="article-info info-on-archive">
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
           
-
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160618problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3011">在线提交（需要权限）</a></p>
           
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+      
     </div>
+    
+    <div class="article-info article-info-index">
+      
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/18/20160618-water/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/12/HNSDFZ-zy/" class="archive-article-date">
-      <time datetime="2016-07-12T07:00:00.000Z" itemprop="datePublished">07-12</time>
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160618-segment" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/18/20160618-segment/" class="article-date">
+      <time datetime="2016-06-18T07:00:00.000Z" itemprop="datePublished">2016-06-18</time>
 </a>
-        </div>
-         
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/12/HNSDFZ-zy/">『湖南省队集训』疯狂BB的zy</a>
+      <a class="article-title" href="/2016/06/18/20160618-segment/">『Noi2016十连测第三场 - 线段树』</a>
     </h1>
   
 
-        <div class="article-info info-on-archive">
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
           
-
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160618problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3010">在线提交（需要权限）</a></p>
           
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+      
     </div>
+    
+    <div class="article-info article-info-index">
+      
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/18/20160618-segment/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/12/HNSDFZ-sm/" class="archive-article-date">
-      <time datetime="2016-07-12T06:00:00.000Z" itemprop="datePublished">07-12</time>
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160618-huffman" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/18/20160618-huffman/" class="article-date">
+      <time datetime="2016-06-18T06:00:00.000Z" itemprop="datePublished">2016-06-18</time>
 </a>
-        </div>
-         
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/12/HNSDFZ-sm/">『湖南省队集训』永不落幕的zy</a>
+      <a class="article-title" href="/2016/06/18/20160618-huffman/">『Noi2016十连测第三场 - 哈夫曼树』</a>
     </h1>
   
 
-        <div class="article-info info-on-archive">
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
           
-
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160618problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3009">在线提交（需要权限）</a></p>
           
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+      
     </div>
+    
+    <div class="article-info article-info-index">
+      
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/18/20160618-huffman/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/11/HNSDFZ-philosopher/" class="archive-article-date">
-      <time datetime="2016-07-11T08:00:00.000Z" itemprop="datePublished">07-11</time>
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160616-fantasy" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/16/20160616-fantasy/" class="article-date">
+      <time datetime="2016-06-16T08:00:00.000Z" itemprop="datePublished">2016-06-16</time>
 </a>
-        </div>
-         
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/11/HNSDFZ-philosopher/">『湖南省队集训』Philosopher</a>
+      <a class="article-title" href="/2016/06/16/20160616-fantasy/">『Noi2016十连测第二场 - 幻想』</a>
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </header>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160616problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3008">在线提交（需要权限）</a></p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/16/20160616-fantasy/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160616-dark" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/16/20160616-dark/" class="article-date">
+      <time datetime="2016-06-16T07:00:00.000Z" itemprop="datePublished">2016-06-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/16/20160616-dark/">『Noi2016十连测第二场 - 黑暗』</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160616problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3007">在线提交（需要权限）</a></p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/16/20160616-dark/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160616-deep" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/16/20160616-deep/" class="article-date">
+      <time datetime="2016-06-16T06:00:00.000Z" itemprop="datePublished">2016-06-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/16/20160616-deep/">『Noi2016十连测第二场 - 深邃』</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160616problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3006">在线提交（需要权限）</a></p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/16/20160616-deep/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160615-rzz" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/15/20160615-rzz/" class="article-date">
+      <time datetime="2016-06-15T08:00:00.000Z" itemprop="datePublished">2016-06-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/15/20160615-rzz/">『Noi2016十连测第一场 - 模范学长』</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160615problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3005">在线提交（需要权限）</a></p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/15/20160615-rzz/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20160615-mzz" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/15/20160615-mzz/" class="article-date">
+      <time datetime="2016-06-15T07:00:00.000Z" itemprop="datePublished">2016-06-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/15/20160615-mzz/">『Noi2016十连测第一场 - 访问计划』</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160615problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3004">在线提交（需要权限）</a></p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a href="/2016/06/15/20160615-mzz/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
-
 </div>
       <footer id="footer">
     <div class="outer">
