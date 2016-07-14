@@ -3,18 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>『Noi2016十连测第三场 - 线段树』 | GodCowC</title>
+  <title>『湖南省队集训』博士的选取器 | GodCowC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="pdf版题面  在线提交（需要权限）">
+  <meta name="description" content="题目题目描述浏览到好图好句的时候，为了避免被删帖、封图、和谐，博士会掏出他的选取器，将好图好句框住，然后Ctrl+C，Ctrl+V。博士从初一开始坚持到现在，已经有 2GB 了。在反复地与吧主斗争之后,博士总结出了经验。
+
+对于一篇帖子，可以从上至下分成$N$个片段，每个片段不可分割，且只有序号相邻的片段才相邻。
+每次框选只能框选连续一段片段$[L,R]$，而且这连续一段片段的总字符量不能超过 $">
 <meta property="og:type" content="article">
-<meta property="og:title" content="『Noi2016十连测第三场 - 线段树』">
-<meta property="og:url" content="http://yoursite.com/2016/06/18/20160618-segment/index.html">
+<meta property="og:title" content="『湖南省队集训』博士的选取器">
+<meta property="og:url" content="http://yoursite.com/2016/07/13/HNSDFZ-selector/index.html">
 <meta property="og:site_name" content="GodCowC">
-<meta property="og:description" content="pdf版题面  在线提交（需要权限）">
-<meta property="og:updated_time" content="2016-06-22T15:25:46.000Z">
+<meta property="og:description" content="题目题目描述浏览到好图好句的时候，为了避免被删帖、封图、和谐，博士会掏出他的选取器，将好图好句框住，然后Ctrl+C，Ctrl+V。博士从初一开始坚持到现在，已经有 2GB 了。在反复地与吧主斗争之后,博士总结出了经验。
+
+对于一篇帖子，可以从上至下分成$N$个片段，每个片段不可分割，且只有序号相邻的片段才相邻。
+每次框选只能框选连续一段片段$[L,R]$，而且这连续一段片段的总字符量不能超过 $">
+<meta property="og:updated_time" content="2016-07-14T10:22:24.489Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="『Noi2016十连测第三场 - 线段树』">
-<meta name="twitter:description" content="pdf版题面  在线提交（需要权限）">
+<meta name="twitter:title" content="『湖南省队集训』博士的选取器">
+<meta name="twitter:description" content="题目题目描述浏览到好图好句的时候，为了避免被删帖、封图、和谐，博士会掏出他的选取器，将好图好句框住，然后Ctrl+C，Ctrl+V。博士从初一开始坚持到现在，已经有 2GB 了。在反复地与吧主斗争之后,博士总结出了经验。
+
+对于一篇帖子，可以从上至下分成$N$个片段，每个片段不可分割，且只有序号相邻的片段才相邻。
+每次框选只能框选连续一段片段$[L,R]$，而且这连续一段片段的总字符量不能超过 $">
   
     <link rel="alternative" href="/atom.xml" title="GodCowC" type="application/atom+xml">
   
@@ -236,11 +245,11 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap"><article id="post-20160618-segment" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-HNSDFZ-selector" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/06/18/20160618-segment/" class="article-date">
-      <time datetime="2016-06-18T07:00:00.000Z" itemprop="datePublished">2016-06-18</time>
+      <a href="/2016/07/13/HNSDFZ-selector/" class="article-date">
+      <time datetime="2016-07-13T08:00:00.000Z" itemprop="datePublished">2016-07-13</time>
 </a>
     </div>
   
@@ -253,7 +262,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      『Noi2016十连测第三场 - 线段树』
+      『湖南省队集训』博士的选取器
     </h1>
   
 
@@ -263,6 +272,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -270,54 +283,30 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160618problems.pdf" target="_blank" rel="external">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3010" target="_blank" rel="external">在线提交（需要权限）</a></p>
-<a id="more"></a>
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h4><p>小<em>D</em>写完了随机哈夫曼树，凭信仰开始补觉，想起了在ZJOI见过的一个模型：</p>
-<blockquote>
-<p>给出一个长度为$n$的数组$a$，$1 \sim n$标号。</p>
-<p>$m$个操作，每个操作有两个参数$l_i, r_i$，表示将区间$[l_i, r_i]$中的所有数修改为这个区间的最大值。</p>
-</blockquote>
-<p>这个问题可以简单地用线段树来完成，现在小<em>D</em>将这个问题扩展了一下。</p>
-<p>给出一个长度为$n$的初始数组$a$，以及$m$个操作，需要维护：</p>
-<ul>
-<li>求依次进行编号为$[L, R]$的这一段操作后$a_k$的值。这些询问互相独立，即可以理解为“假如进行这一段操作后，$a_k$的值会变成多少”。</li>
-<li>将$a_u$的值修改为$v$，即修改初始数组，这次修改会影响它之后的所有询问。</li>
-</ul>
-<p>可以参考输入格式来帮助理解题意。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>从文件segment.in中读入数据。</p>
-<p>第一行，三个正整数$n, m, q$，表示数组长度，操作数和询问数。</p>
-<p>第二行，$n$个正整数$a_i$。</p>
-<p>接下来$m$行，每行两个正整数$l_i, r_i$，描述一个操作。</p>
-<p>接下来$q$行，每行描述一次询问或一次初始数组的修改，格式如下：</p>
-<ul>
-<li>$1\ u\ v$，将$a_u$的值修改为$v$。</li>
-<li>$2\ L\ R\ k$，询问假如进行编号为$[L, R]$的这一段操作后$a_k$的值。</li>
-</ul>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出到文件segment.out中。</p>
-<p>对于每次询问输出一行一个正整数，表示“假如进行编号为$[L, R]$的这一段操作后$a_k$的值”。</p>
-<h4 id="样例输入1"><a href="#样例输入1" class="headerlink" title="样例输入1"></a>样例输入1</h4><pre><code>5 3 6
-5 3 1 4 2
-2 3
-3 4
-1 5
-2 1 2 3
-1 4 5
-2 1 2 3
-1 4 4
-1 1 4
-2 1 3 1
-</code></pre><h4 id="样例输出1"><a href="#样例输出1" class="headerlink" title="样例输出1"></a>样例输出1</h4><pre><code>4
-5
-4
-</code></pre><h4 id="样例输入2"><a href="#样例输入2" class="headerlink" title="样例输入2"></a>样例输入2</h4><p><a href="http://o8jc7x6dc.bkt.clouddn.com/segment_large.in" target="_blank" rel="external">点击这里下载</a></p>
-<h4 id="样例输出2"><a href="#样例输出2" class="headerlink" title="样例输出2"></a>样例输出2</h4><p><a href="http://o8jc7x6dc.bkt.clouddn.com/segment_large.ans" target="_blank" rel="external">点击这里下载</a></p>
-<h4 id="数据规模"><a href="#数据规模" class="headerlink" title="数据规模"></a>数据规模</h4><p>对于$10\%$的数据，$n, m, q \leq 100$。</p>
-<p>对于$30\%$的数据，$n, m, q \leq 10000$。</p>
-<p>对于另$20\%$的数据，询问时$L = 1$。</p>
-<p>对于$80\%$的数据，$n, m, q \leq 50000$（包含前一档$L = 1$）。</p>
-<p>对于$100\%$的数据，$n, m, q \leq 10^5$，$1 \leq a_i,  v \leq 10^5$。</p>
-<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>（稍后再补）</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>（稍后再补）</p>
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>浏览到好图好句的时候，为了避免被删帖、封图、和谐，博士会掏出他的选取器，将好图好句框住，然后<code>Ctrl+C</code>，<code>Ctrl+V</code>。博士从初一开始坚持到现在，已经有 2GB 了。在反复地与吧主斗争之后,博士总结出了经验。</p>
+<ol>
+<li>对于一篇帖子，可以从上至下分成$N$个片段，每个片段不可分割，且只有序号相邻的片段才相邻。</li>
+<li>每次框选只能框选连续一段片段$[L,R]$，而且这连续一段片段的总字符量不能超过 $LIMIT$，否则会出错。</li>
+<li>对于每次框选与复制，耗时只与这连续一段片段中字符量最大的那一个片段有关，而且满足正比例函数关系。为了让题目简单，规定耗时等于字符量。</li>
+<li>两次框选之间的时间间隔可以视为$0$。</li>
+</ol>
+<p>正在博士总结完经验的时候，他瞅到了一篇掺杂大量好图好句的帖子。于是，一场新的战争爆发了…………战局紧张，博士想知道他的最小耗时是多少。</p>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行两个整数$N$和$Limit$。</p>
+<p>接下来的$N$行，每行一个整数，代表第$I$个片段的字符量。</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>仅一行，为博士的最小耗时。</p>
+<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>8 17
+2
+2
+2
+8
+1
+8
+2
+1
+</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>12
+</code></pre><p><em>{解释：$222/818/21,2+8+2=12$}</em></p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$40\%$的数据，$N \leq 1000$；</p>
+<p>对于$100\%$的数据，$N \leq 300000$。</p>
 
       
     </div>
@@ -330,15 +319,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/06/18/20160618-water/">
-                    『Noi2016十连测第三场 - 接水问题』
+                <a href="/2016/07/14/HA2016-af-idol/">
+                    『河南省队集训』神盾局和偶像
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/06/18/20160618-huffman/">
-                    『Noi2016十连测第三场 - 哈夫曼树』
+                <a href="/2016/07/13/HNSDFZ-calculator/">
+                    『湖南省队集训』博士的计算器
                 </a>
             </div>
         
@@ -349,7 +338,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目"><span class="toc-number">1.</span> <span class="toc-text">题目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题描述"><span class="toc-number">1.1.</span> <span class="toc-text">问题描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入格式"><span class="toc-number">1.2.</span> <span class="toc-text">输入格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出格式"><span class="toc-number">1.3.</span> <span class="toc-text">输出格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输入1"><span class="toc-number">1.4.</span> <span class="toc-text">样例输入1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输出1"><span class="toc-number">1.5.</span> <span class="toc-text">样例输出1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输入2"><span class="toc-number">1.6.</span> <span class="toc-text">样例输入2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输出2"><span class="toc-number">1.7.</span> <span class="toc-text">样例输出2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据规模"><span class="toc-number">1.8.</span> <span class="toc-text">数据规模</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题解"><span class="toc-number">2.</span> <span class="toc-text">题解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目"><span class="toc-number">1.</span> <span class="toc-text">题目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#题目描述"><span class="toc-number">1.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入"><span class="toc-number">1.2.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出"><span class="toc-number">1.3.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输入"><span class="toc-number">1.4.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输出"><span class="toc-number">1.5.</span> <span class="toc-text">样例输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据范围"><span class="toc-number">1.6.</span> <span class="toc-text">数据范围</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -406,7 +395,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"『Noi2016十连测第三场 - 线段树』　| GodCowC　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"『湖南省队集训』博士的选取器　| GodCowC　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -422,7 +411,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/06/18/20160618-segment/" data-title="『Noi2016十连测第三场 - 线段树』" data-url="http://yoursite.com/2016/06/18/20160618-segment/"></div>
+    <div class="ds-thread" data-thread-key="2016/07/13/HNSDFZ-selector/" data-title="『湖南省队集训』博士的选取器" data-url="http://yoursite.com/2016/07/13/HNSDFZ-selector/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -446,7 +435,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/06/18/20160618-water/" title="Pre: 『Noi2016十连测第三场 - 接水问题』">
+            <a href="/2016/07/14/HA2016-af-idol/" title="Pre: 『河南省队集训』神盾局和偶像">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -454,7 +443,7 @@
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/06/18/20160618-huffman/" title="Next: 『Noi2016十连测第三场 - 哈夫曼树』">
+            <a href="/2016/07/13/HNSDFZ-calculator/" title="Next: 『湖南省队集训』博士的计算器">
                 <i class="fa fa-angle-right"></i>
             </a>
         

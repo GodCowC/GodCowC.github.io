@@ -106,10 +106,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
                     </ul>
@@ -236,7 +236,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
   
@@ -478,6 +478,87 @@
         <p class="article-more-link">
           <a href="/2016/07/14/HA2016-af-idol/#more">more >></a>
         </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-HNSDFZ-selector" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/13/HNSDFZ-selector/" class="article-date">
+      <time datetime="2016-07-13T08:00:00.000Z" itemprop="datePublished">2016-07-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/13/HNSDFZ-selector/">『湖南省队集训』博士的选取器</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>浏览到好图好句的时候，为了避免被删帖、封图、和谐，博士会掏出他的选取器，将好图好句框住，然后<code>Ctrl+C</code>，<code>Ctrl+V</code>。博士从初一开始坚持到现在，已经有 2GB 了。在反复地与吧主斗争之后,博士总结出了经验。</p>
+<ol>
+<li>对于一篇帖子，可以从上至下分成$N$个片段，每个片段不可分割，且只有序号相邻的片段才相邻。</li>
+<li>每次框选只能框选连续一段片段$[L,R]$，而且这连续一段片段的总字符量不能超过 $LIMIT$，否则会出错。</li>
+<li>对于每次框选与复制，耗时只与这连续一段片段中字符量最大的那一个片段有关，而且满足正比例函数关系。为了让题目简单，规定耗时等于字符量。</li>
+<li>两次框选之间的时间间隔可以视为$0$。</li>
+</ol>
+<p>正在博士总结完经验的时候，他瞅到了一篇掺杂大量好图好句的帖子。于是，一场新的战争爆发了…………战局紧张，博士想知道他的最小耗时是多少。</p>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行两个整数$N$和$Limit$。</p>
+<p>接下来的$N$行，每行一个整数，代表第$I$个片段的字符量。</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>仅一行，为博士的最小耗时。</p>
+<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>8 17
+2
+2
+2
+8
+1
+8
+2
+1
+</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>12
+</code></pre><p><em>{解释：$222/818/21,2+8+2=12$}</em></p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$40\%$的数据，$N \leq 1000$；</p>
+<p>对于$100\%$的数据，$N \leq 300000$。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
       
       <div class="clearfix"></div>
     </div>
@@ -895,98 +976,6 @@ Math Error
 
 
   
-    <article id="post-HNSDFZ-philosopher" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/11/HNSDFZ-philosopher/" class="article-date">
-      <time datetime="2016-07-11T08:00:00.000Z" itemprop="datePublished">2016-07-11</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/11/HNSDFZ-philosopher/">『湖南省队集训』Philosopher</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p align="right"><br>    <em>“ By all means marry, if you get a good wife, you’ll be happy, if you get a bad one, you’ll become a philosopher.” ——Socrates</em><br></p>
-
-<p>给定一个长度为$n$的序列，$m$次操作， 操作有两种：一种是将其一个区间升序/降序排序，一种是询问区间元素积的十进制下最高位是什么数。</p>
-<p>输入第一行两个正整数$n$和$m$。第二行$n$个正整数代表初始序列。</p>
-<p>后面$m$行每行为“<code>1 le ri flag</code>”代表将$[le,ri]$这个区间排序，如果$flag$为$1$则为升序排序。为$0$则是降序排序。</p>
-<p>如果这行是“<code>2 le ri</code>”则是询问区间$[le,ri]$的元素积最高位。</p>
-<p>对于每一个询问输出一行即为答案。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>测试点编号</strong></th>
-<th style="text-align:left"><strong>特征</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">$0 \sim 3$</td>
-<td style="text-align:left">没有1操作</td>
-</tr>
-<tr>
-<td style="text-align:left">$4 \sim 7$</td>
-<td style="text-align:left">$n,m \leq 1000$且区间乘积在<code>long long</code>范围内</td>
-</tr>
-<tr>
-<td style="text-align:left">$8 \sim 11$</td>
-<td style="text-align:left">$n,m \leq 1000$</td>
-</tr>
-<tr>
-<td style="text-align:left">$12 \sim 19$</td>
-<td style="text-align:left">$n,m \leq 200000, 1 \leq val \leq n$</td>
-</tr>
-</tbody>
-</table>
-<p>评分方式在前$12$个测试点时为去除行末空格后全文比较。</p>
-<p>后$8$个测试点有spj。每个测试点如果与标准答案有超过$20$个不同的地方就得$0$分。否则$5$分。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1001,14 +990,14 @@ Math Error
                 2016 常可
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
+                        <span id="site-visit" >Site Visitors: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -1018,7 +1007,7 @@ Math Error
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
+                        <span id="page-visit">Page Hits: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -1072,9 +1061,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
