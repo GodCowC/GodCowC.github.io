@@ -495,6 +495,107 @@
 
 
   
+    <article id="post-HNSDFZ-reform" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/14/HNSDFZ-reform/" class="article-date">
+      <time datetime="2016-07-14T07:00:00.000Z" itemprop="datePublished">2016-07-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/14/HNSDFZ-reform/">『湖南省队集训』基因改造</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><blockquote>
+<p>“人类智慧的冰峰，只有萌萌哒的我寂寞地守望。”</p>
+<p align="right">——TB</p>
+
+</blockquote>
+<p>TB正走在改造人类智慧基因的路上。</p>
+<p>TB发现人类智慧基因一点也不萌萌哒，导致人类普遍智商过低，为了拯救低智商人群，博爱的TB开始改造人类智慧基因。</p>
+<p>人类智慧DNA由$C$种人类智慧脱氧核苷酸构成（这是一种十分特殊的DNA）。TB智慧DNA片段$T$长度为$M$，她可以把另一段长度为$M$的人类智慧DNA片段$S$改造成$T$。改造过程中，TB可以充分发挥智慧，将任意两种人类智慧脱氧核苷酸交换（比如对于片段$S=12321$，交换$1$和$2$变成 $S=21312$，交换$1$和$4$变成$42324），可以无限次交换。如果$S$可以通过若干次交换变成$T$，那么就称$S$为“萌萌哒人类基因片段”。</p>
+<p>TB想知道对于一个长度为$N$的人类智慧DNA片段$S[1 \sim N]$，有多少个长度为$M$的连续子片段$S[i \sim +M-1]$，是“萌萌哒人类基因片段”， 且这些“萌萌哒人类基因片段”在哪里。</p>
+<h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><p>输入文件名为<font face="Times New Roman"><strong><em>reform.in</em></strong></font>。</p>
+<p>输入文件的第一行包含两个正整数$case$和$C$，分别表示数据组数和人类智慧脱氧核苷酸的种数。</p>
+<p>接下来$3 \times case$行， 每三行表示一组数据：</p>
+<p>第一行两个正整数$N$和$M$，表示人类智慧DNA片段$S$和TB智慧DNA片段$T$的长度。</p>
+<p>第二行$N$个正整数，表示人类智慧DNA片段$S$。</p>
+<p>第三行$M$个正整数，表示TB智慧DNA片段$T$。</p>
+<h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>输出文件名为<font face="Times New Roman"><strong><em>reform.out</em></strong></font>。</p>
+<p>对于每组数据：</p>
+<p>第一行一个正整数$tot$，表示“萌萌哒人类基因片段”的个数。</p>
+<p>接下来一行$tot$个用空格隔开的正整数$pos$，表示“萌萌哒人类基因片段”开头所在的位置。要求从小到大输出每个$pos$。</p>
+<h4 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h4><pre><code>3 3
+6 3
+1 2 1 2 3 2
+3 1 3
+6 3
+1 2 1 2 1 2
+3 1 3
+6 3
+1 1 2 1 2 1
+3 1 3
+</code></pre><h4 id="SampleOutput"><a href="#SampleOutput" class="headerlink" title="SampleOutput"></a>SampleOutput</h4><pre><code>3
+1 2 4
+4
+1 2 3 4
+3
+2 3 4
+</code></pre><p>对于第一组数据：</p>
+<ul>
+<li>$S[1 \sim 3]=121$，可以先将$1$和$2$交换变成$212$，再将$2$和$3$交换变成$313$。</li>
+<li>$S[2 \sim 4]=212$，可以将$2$和$3$交换变成$313$。</li>
+<li>$S[4 \sim 6]=232$，可以先将$2$和$3$交换变成$323$，再将$1$和$2$交换变成$313$。</li>
+</ul>
+<h4 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h4><table><tr><td>测试点编号</td><td>$n, m, C$</td></tr><tr><td>$1$</td><td>$n, m, C \leq 1000$</td></tr><tr><td>$2 \sim 3$</td><td>$n, m \leq 100000, C \leq 40$</td></tr><tr><td>$4 \sim 6$</td><td>$n, m, C \leq 100000$</td></tr><tr><td>7 \sim 10</td><td>$n, m, C \leq 1000000$</td></tr></table>
+
+<p>对于所有数据，$case=3$。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HNSDFZ-duel" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -550,7 +651,8 @@
 <p>接下来两行：第一行$n$个非负整数，表示TB的每副牌堆中【杀】的个数；</p>
 <p>第二行$n$个非负整数，表示颓狗的每副牌堆中【杀】的个数。</p>
 <p>数据保证第二行和第三行的$n$个非负整数按照<strong>从小到大</strong>的顺序给出。</p>
-<h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>输出文件名为<font face="Times New Roman"><strong><em>duel.out</em></strong></font>。<br>一行，表示TB期望增加的智商点数。</p>
+<h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>输出文件名为<font face="Times New Roman"><strong><em>duel.out</em></strong></font>。</p>
+<p>一行，表示TB期望增加的智商点数。</p>
 <p>要求输出期望在对$10^9+7$取模意义下的值。</p>
 <h4 id="Sample-Input-1"><a href="#Sample-Input-1" class="headerlink" title="Sample Input 1"></a>Sample Input 1</h4><pre><code>3 1
 2 3 4
@@ -904,74 +1006,6 @@ Math Error
 <h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>最后在你的帮助下 ciewai 赢了 HAO，可是 HJWJSSB 还是十分犹豫，于是他去问了他曾经的王者，王者告诉他说既然你觉得很难选择，那就不如都选择！！！</p>
 <p>于是 HJWJSSB 和 ciewai，还有 HAO 幸福快乐的生活在了一起。。。。。。</p>
 <p>Orz 祯哥，祝祯哥早日得到妹子的认可， NOI 进队！！！</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-HNSDFZ-zy" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/12/HNSDFZ-zy/" class="article-date">
-      <time datetime="2016-07-12T07:00:00.000Z" itemprop="datePublished">2016-07-12</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/12/HNSDFZ-zy/">『湖南省队集训』疯狂BB的zy</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>zy 超强， 总是想些奇怪的问题。</p>
-<p>一天，他脑洞出了这样一个问题。 有$n$个点， 每个点的度数不超过$A_i$, 问从中选出一些点形成一颗大小为$s(1 \leq s \leq n)$的树的方案数。 zy 自然$O(n)$秒掉了这题，于是他想用这个问题考考你，来显示自己的强大。</p>
-<h4 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h4><p>第一行有一个整数$n$。</p>
-<p>第二行$n$个数表示$A_i$。</p>
-<h4 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h4><p>一行$n$个数，第$s$个数表示形成大小为$s$的树的方案数对$1004535809(497 \times 2^{21} + 1)$取模的结果。</p>
-<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>3
-2 2 1
-</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>3 3 2
-</code></pre><h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$20\%$的数据，$n \leq 6$；</p>
-<p>对于$60\%$的数据，$n \leq 50$；</p>
-<p>对于$100\%$的数据，$n \leq 100$。</p>
 
       
     </div>
