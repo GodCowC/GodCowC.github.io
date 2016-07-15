@@ -106,10 +106,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
+                        <li>菜单</li>
+                        <li>标签</li>
                         
-                        <li>Friends</li>
+                        <li>友情链接</li>
                         
                         
                     </ul>
@@ -236,7 +236,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
   
@@ -956,7 +956,7 @@ Math Error
 </table>
 <p>此题有spj。</p>
 <h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>首先要解释清楚题意对吧，体面中置换和排列真是乱七八糟。</p>
-<p>大意就是，初始排列是$(1, 2, \dots, n)$，你要构造一个置换，然后对这个排列进行置换，把得到的排列再进行一次置换，得到的结果为给定排列。举个例子，假设$n=4$，我们构造的置换是$\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4\ 3 &amp; 4 &amp; 2 &amp; 1\end{pmatrix}$，那么置换一次得到$(4, 3, 1, 2)$，再做一次得到$(2, 1, 4, 3)$，这就满足样例了。</p>
+<p>大意就是，初始排列是$(1, 2, \dots, n)$，你要构造一个置换，然后对这个排列进行置换，把得到的排列再进行一次置换，得到的结果为给定排列。举个例子，假设$n=4$，我们构造的置换是$\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4\\ 3 &amp; 4 &amp; 2 &amp; 1\end{pmatrix}$，那么置换一次得到$(4, 3, 1, 2)$，再做一次得到$(2, 1, 4, 3)$，这就满足样例了。</p>
 <p>我们再回顾一下置换的定义，就是把一个序列中的每个数放到一个指定的位置，而给出的排列则是每个位置上的数。因此，我们求出给出排列的逆，就得到了每个数所在的位置，也就是另一个置换。这时，就可以形象地说，我们要把置换“开方”，解除连做两次等于它的一个置换。</p>
 <p>根据基本知识，一个置换可以分解成若干个循环。这些循环中，长度为奇数的循环是可以直接开方的，因为走两次向右移了一步，等价于每一次向右移$\frac{len+1}{2}$步，因此每个元素对应的结果就是在它后面这么多位的元素。长度为偶数的则需要找一个和它长度一致的，然后交叉合并就好了。这里不是很容易说清楚，还是画个图理解一下吧。</p>
 <p>注意代码实现，最好保证排序、找等长循环等步骤严格线性，不然容易T。</p>
@@ -1062,14 +1062,14 @@ Math Error
                 2016 常可
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >Site Visitors: 
+                        <span id="site-visit" >本站到访数: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -1079,7 +1079,7 @@ Math Error
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">Page Hits: 
+                        <span id="page-visit">本页阅读量: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -1133,9 +1133,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
