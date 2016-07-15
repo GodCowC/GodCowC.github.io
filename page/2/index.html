@@ -240,6 +240,173 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-HNSDFZ-selector" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/13/HNSDFZ-selector/" class="article-date">
+      <time datetime="2016-07-13T08:00:00.000Z" itemprop="datePublished">2016-07-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/13/HNSDFZ-selector/">『湖南省队集训』博士的选取器</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>浏览到好图好句的时候，为了避免被删帖、封图、和谐，博士会掏出他的选取器，将好图好句框住，然后<code>Ctrl+C</code>，<code>Ctrl+V</code>。博士从初一开始坚持到现在，已经有 2GB 了。在反复地与吧主斗争之后,博士总结出了经验。</p>
+<ol>
+<li>对于一篇帖子，可以从上至下分成$N$个片段，每个片段不可分割，且只有序号相邻的片段才相邻。</li>
+<li>每次框选只能框选连续一段片段$[L,R]$，而且这连续一段片段的总字符量不能超过 $LIMIT$，否则会出错。</li>
+<li>对于每次框选与复制，耗时只与这连续一段片段中字符量最大的那一个片段有关，而且满足正比例函数关系。为了让题目简单，规定耗时等于字符量。</li>
+<li>两次框选之间的时间间隔可以视为$0$。</li>
+</ol>
+<p>正在博士总结完经验的时候，他瞅到了一篇掺杂大量好图好句的帖子。于是，一场新的战争爆发了…………战局紧张，博士想知道他的最小耗时是多少。</p>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行两个整数$N$和$Limit$。</p>
+<p>接下来的$N$行，每行一个整数，代表第$I$个片段的字符量。</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>仅一行，为博士的最小耗时。</p>
+<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>8 17
+2
+2
+2
+8
+1
+8
+2
+1
+</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>12
+</code></pre><p><em>{解释：$222/818/21,2+8+2=12$}</em></p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$40\%$的数据，$N \leq 1000$；</p>
+<p>对于$100\%$的数据，$N \leq 300000$。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-HNSDFZ-calculator" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/13/HNSDFZ-calculator/" class="article-date">
+      <time datetime="2016-07-13T07:00:00.000Z" itemprop="datePublished">2016-07-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/13/HNSDFZ-calculator/">『湖南省队集训』博士的计算器</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>一日，BY大神黄犇黄大组长打完羽毛球回来，发现博士正在用魔兽地图编辑器做一个计算器的软件。</p>
+<p>因为最近总是一些取模取模的，所以想非常快速的算出来。简而言之，就是对以下$3$个问题进行讨论。</p>
+<ol>
+<li>给定$y, z, P$，计算$y^z ({\rm mod}~ P)$的值；</li>
+<li>给定$y, z, P$，计算满足$y^x \equiv z({\rm mod}~ P)$的最小非负整数$x$；</li>
+<li>给定$y, z, P$，计算$C(z, y)({\rm mod}~ P)$的值（意义为$Z$中取$Y$的组合）。</li>
+</ol>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行一个正整数$N$，描述数据组数。</p>
+<p>接下来的$N$行，每行$4$个正整数$Sum, y, z, P$。</p>
+<p>$Sum$表述询问类型，如上所述。对于第$2$种要求，若$x$不存在，则输出“<code>Math Error</code>”。</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>要求有$N$行输出，每行一个整数，为询问的答案。</p>
+<h4 id="样例输入1"><a href="#样例输入1" class="headerlink" title="样例输入1"></a>样例输入1</h4><pre><code>4
+1 2 10 1000
+2 3 1 1000
+2 2 3 4
+3 2 7 9
+</code></pre><h4 id="样例输出1"><a href="#样例输出1" class="headerlink" title="样例输出1"></a>样例输出1</h4><pre><code>24
+0
+Math Error
+3
+</code></pre><h4 id="样例输入2"><a href="#样例输入2" class="headerlink" title="样例输入2"></a>样例输入2</h4><pre><code>4
+2 1 2 9
+3 1 6 7
+1 5 3 7
+1 9 2 8
+</code></pre><h4 id="样例输出2"><a href="#样例输出2" class="headerlink" title="样例输出2"></a>样例输出2</h4><pre><code>Math Error
+6
+6
+1
+</code></pre><h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><table><tr><td></td><td>操作$1$</td><td>操作$2$</td><td>操作$3$</td></tr><tr><td>$1 \sim 4$</td><td rowspan="4">操作个数$&lt; 501$。保证$y, z, p &lt;  10^9$。</td><td>操作个数为$0$。</td><td>操作个数为$0$。</td></tr><tr><td>$5 \sim 10$</td><td>操作个数$&lt; 51$。保证$y, z, P &lt;  10^3$。$P$不一定为质数。</td><td>操作个数$&lt; 11$。保证$y, z &lt;  10^3, P &lt;  10^9$。$P$不一定为质数。</td></tr><tr><td>$11 \sim 16$</td><td>操作个数$&lt; 31$。保证$y, z, P &lt;  10^9$。而且$P$为质数。</td><td>操作个数$&lt; 31$。保证$y, z &lt;  10^7, P &lt;  10^5$。而且$P$为质数。</td></tr><tr><td>$17 \sim 20$</td><td>操作个数$&lt; 51$。保证$y, z, P &lt;  10^9$。$P$不一定为质数。</td><td>操作个数$&lt; 51$。保证$y, z &lt;  10^6, P &lt;  10^9$。$P$不为质数。</td></tr></table>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HNSDFZ-expectation" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -881,125 +1048,9 @@
 
 
   
-    <article id="post-20160618-segment" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/18/20160618-segment/" class="article-date">
-      <time datetime="2016-06-18T07:00:00.000Z" itemprop="datePublished">2016-06-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/18/20160618-segment/">『Noi2016十连测第三场 - 线段树』</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160618problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3010">在线提交（需要权限）</a></p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a href="/2016/06/18/20160618-segment/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-20160618-huffman" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/18/20160618-huffman/" class="article-date">
-      <time datetime="2016-06-18T06:00:00.000Z" itemprop="datePublished">2016-06-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/18/20160618-huffman/">『Noi2016十连测第三场 - 哈夫曼树』</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160618problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3009">在线提交（需要权限）</a></p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a href="/2016/06/18/20160618-huffman/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 </div>
