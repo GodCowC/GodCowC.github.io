@@ -303,6 +303,205 @@
 
 
   
+    <article id="post-HNSDFZ-string" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/16/HNSDFZ-string/" class="article-date">
+      <time datetime="2016-07-16T08:00:00.000Z" itemprop="datePublished">2016-07-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/16/HNSDFZ-string/">『湖南省队集训』string</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="backgrounds"><a href="#backgrounds" class="headerlink" title="backgrounds"></a>backgrounds</h4><p>夕阳镇第五幼儿园的zhangzj是字符串之神，AC自动机<del>、AK自动机</del>、factor Oracle、后缀数组、后缀树、后缀自动机、后缀平衡树、后缀仙人掌<del>、后缀平面图</del>他都会，一天他在回家路上捡到了三个字符串，他发现这些字符串很好玩，于是他想通过其中两个字符串构成一个长字符串，用第三个字符串在其中匹配，但是他着急找他的好♂友玩<del>(hei)</del>游<del>(hei)</del>戏<del>(hei)</del>，只好请你来帮忙。</p>
+<h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><p>给定三个字符串$a,b,c$，它们的字符集均为小写字母，即{$a,b,c,…,z$}。</p>
+<p>令$F_0=a,F_1=b,…,F<em>i=F</em>{i-1}+F_{i-2}(i \leq 2)$。</p>
+<p>其中$+$表示字符串的连接。</p>
+<p>现在有$q$个询问，每次询问给定$n,l,r,L,R$，求在$F_n$的第$l$个到第$r$个字符组成的字符串中，$s$的第$L$个字符到第$R$个字符组成的字符串的出现次数。</p>
+<h4 id="input-format"><a href="#input-format" class="headerlink" title="input format"></a>input format</h4><p>第一行一个字符串$a$。</p>
+<p>第二行一个字符串$b$。</p>
+<p>第三行一个字符串$s$。</p>
+<p>第四行一个正整数$q$。</p>
+<p>下接$q$行，每行五个数：$n,l,r,L,R$，表示询问。</p>
+<h4 id="output-format"><a href="#output-format" class="headerlink" title="output format"></a>output format</h4><p>共$q$行，每行对应一个询问的答案。</p>
+<h4 id="sample-input"><a href="#sample-input" class="headerlink" title="sample input"></a>sample input</h4><pre><code>a
+b
+bb
+4
+4 1 5 1 2
+4 1 1 1 2
+4 2 4 1 1
+6 1 13 1 2
+</code></pre><h4 id="sample-output"><a href="#sample-output" class="headerlink" title="sample output"></a>sample output</h4><pre><code>1
+0
+2
+3
+</code></pre><h4 id="sample-explanation"><a href="#sample-explanation" class="headerlink" title="sample explanation"></a>sample explanation</h4><p>$F_0 = “a”$；</p>
+<p>$F_1 = “b”$；</p>
+<p>$F_2 = “ba”$；</p>
+<p>$F_3 = “bab”$；</p>
+<p>$F_4 = “babba”$；</p>
+<p>$F_5 = “babbabab”$；</p>
+<p>$F_6 = “babbababbabba”$。</p>
+<h4 id="constraints"><a href="#constraints" class="headerlink" title="constraints"></a>constraints</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">数据编号</th>
+<th style="text-align:left">数据范围</th>
+<th style="text-align:left">特殊条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$1$</td>
+<td style="text-align:left">$&#124;F_n&#124;, &#124;s&#124;, q \leq 100$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$2$</td>
+<td style="text-align:left">$&#124;F_n&#124;, &#124;s&#124;, q \leq 100$</td>
+<td style="text-align:left">$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$3$</td>
+<td style="text-align:left">$&#124;F_n&#124;, &#124;s&#124;, q \leq 100$</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">$4$</td>
+<td style="text-align:left">$&#124;F_n&#124;, &#124;s&#124;, q \leq 1000$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$5$</td>
+<td style="text-align:left">$&#124;F_n&#124;, &#124;s&#124;, q \leq 1000$</td>
+<td style="text-align:left">$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$6$</td>
+<td style="text-align:left">$&#124;F_n&#124;, &#124;s&#124;, q \leq 1000$</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">$7$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 1000$，$1 \leq &#124;F_n&#124; \leq 10^5$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$，$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$8$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 1000$，$1 \leq &#124;F_n&#124; \leq 10^5$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$9$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 1000$，$1 \leq &#124;F_n&#124; \leq 10^5$</td>
+<td style="text-align:left">$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$10$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 1000$，$1 \leq &#124;F_n&#124; \leq 10^5$</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">$11$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$，$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$12$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$，$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$13$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$14$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">$L = 1, R = &#124;s&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$15$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$16$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">$l = 1, r = &#124;F_n&#124;$</td>
+</tr>
+<tr>
+<td style="text-align:left">$17$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">$18$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">$19$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">$20$</td>
+<td style="text-align:left">$&#124;s&#124;, q \leq 10^4$，$1 \leq &#124;F_n&#124; \leq 10^9$</td>
+<td style="text-align:left">无</td>
+</tr>
+</tbody>
+</table>
+<p>对于$100\%$的数据，$1 \leq |F_n| \leq 10^{9}$，$1 \leq l \leq r \leq |F_n|$，$1 \leq L \leq R \leq |s|$，$1 \leq |a|, |b|, |s| \leq 10^4$，$1 \leq q \leq 10^4$。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HNSDFZ-game" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -895,74 +1094,6 @@
       
         <p class="article-more-link">
           <a href="/2016/07/14/HApeixunguncu/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-HA2016-af-idol" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/14/HA2016-af-idol/" class="article-date">
-      <time datetime="2016-07-14T08:52:17.551Z" itemprop="datePublished">2016-07-14</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/14/HA2016-af-idol/">『河南省队集训』神盾局和偶像</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>“Are you OK? Do you like S.H.I.E.L.D?”</p>
-<p>“后面的朋友们你们好吗？让我看到你们的双手！”</p>
-<p>“史塔克先生连任好不好啊？”</p>
-<p>人工智能战争胜利后，王牌特工Asm.Def加入了神盾局。不料史蒂夫·罗杰斯背叛革命，投靠九头蛇，致使神盾局陷入了危机。为了挽救神盾局，中央研究决定，让Asm.Def和另一名特工Fmuckss成为偶像。 </p>
-<center><br><img src="http://o8jc7x6dc.bkt.clouddn.com/20160630063314_26309.png" alt=""><br></center>
-
-<p>人生经验丰富的老司机Asm.Def决定通过免费派发的小米手环监控每个人的谈话，并通过检测“Hail Hydra”、“大括号换行”、“PHP”等敏感词确定现场有多少名九头蛇成员。Asm.Def列出了$W$个敏感词$P_1 \dots P_W$和$N$个人谈话的文本$S_1 \dots S_N$，他希望对每个$P_1 \dots P_W$，求出它在$N$个文本中总共出现了多少次。所有敏感词和文本$P_i$、$S_i$只包含大小写英文字母、数字或减号’-’。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AC自动机/">AC自动机</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/07/14/HA2016-af-idol/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
