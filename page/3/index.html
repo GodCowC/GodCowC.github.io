@@ -375,7 +375,7 @@
 <h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>考虑无根树的prufer序列。一个结点在prufer序列中出现的次数就等于它的度数$-1$，因此问题就转化为在序列中每个数出现次数有限制的计数问题。</p>
 <p>考虑如下的状态表示：$ans[i][j][k]$表示计算到前$i$个结点时，已经<strong>考虑</strong>过$j$个结点，并且已经填上序列中的$k$个位置的方案数。</p>
 <p>那么转移就很显然了，首先不考虑就是$ans[i][j][k] = ans[i - 1][j][k]$，考虑的话，还需要枚举该结点编号出现次数$time(0 \leq time &lt; A[i])$，这样带来的方案总数为</p>
-<p>$$\sum<em>{time = 0}^{k}C</em>{k}^{time}ans[i - 1][j - 1][k - time]$$</p>
+<p>$$\sum_{time = 0}^{k}C_{k}^{time}ans[i - 1][j - 1][k - time]$$</p>
 <p>两种情况相加即可。这个DP的时间复杂度显然是$O(n^4)$。</p>
 <p>最后的输出嘛，首先输出$1$个结点的答案$n$，然后对每个$s$输出$ans[n][s][s - 2]$，其中$s - 2$就是prufer序列的长度。</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 120</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 1004535809</span></div><div class="line"><span class="keyword">int</span> C[MAXN][MAXN];</div><div class="line"><span class="keyword">int</span> ans[MAXN][MAXN][MAXN];</div><div class="line"><span class="keyword">int</span> n;</div><div class="line"><span class="keyword">int</span> a[MAXN];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	freopen(<span class="string">"zy.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line">	freopen(<span class="string">"zy.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</div><div class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</div><div class="line">	C[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</div><div class="line">	&#123;</div><div class="line">		C[i][<span class="number">0</span>] = C[i][i] = <span class="number">1</span>;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; i; j++)</div><div class="line">			C[i][j] = (C[i - <span class="number">1</span>][j] + C[i - <span class="number">1</span>][j - <span class="number">1</span>]) % MOD;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</div><div class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]);</div><div class="line">	ans[<span class="number">0</span>][<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= n; k++)</div><div class="line">				ans[i][j][k] = (ans[i][j][k] + ans[i - <span class="number">1</span>][j][k]) % MOD;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> time = <span class="number">0</span>; time &lt; a[i]; time++)</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++)</div><div class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> k = time; k &lt;= n; k++)</div><div class="line">					ans[i][j][k] = (ans[i][j][k] + (<span class="keyword">long</span> <span class="keyword">long</span>)C[k][time] * ans[i - <span class="number">1</span>][j - <span class="number">1</span>][k - time] % MOD) % MOD;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, n);</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++)</div><div class="line">		<span class="built_in">printf</span>(<span class="string">" %d"</span>, ans[n][i][i - <span class="number">2</span>]);</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -803,7 +803,7 @@
       
       
         <p class="article-more-link">
-          <a href="/2016/06/18/20160618-water/#more">more >></a>
+          <a href="/2016/06/18/20160618-water/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -861,7 +861,7 @@
       
       
         <p class="article-more-link">
-          <a href="/2016/06/18/20160618-segment/#more">more >></a>
+          <a href="/2016/06/18/20160618-segment/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -919,7 +919,7 @@
       
       
         <p class="article-more-link">
-          <a href="/2016/06/18/20160618-huffman/#more">more >></a>
+          <a href="/2016/06/18/20160618-huffman/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -977,7 +977,7 @@
       
       
         <p class="article-more-link">
-          <a href="/2016/06/16/20160616-fantasy/#more">more >></a>
+          <a href="/2016/06/16/20160616-fantasy/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>

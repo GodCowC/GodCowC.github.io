@@ -13,7 +13,7 @@ content图的定义：图$G$是一个有序二元组$(V,E)$，其中$V$称为点
 <meta property="og:site_name" content="GodCowC">
 <meta property="og:description" content="题目backgrounds夕阳镇第五幼儿园的zhangzj发现每个幼儿园的好♂友关系都会构成一个图，由于身处图中，zhangzj决定研究这些图，经过1s的思考，他发现这些图有很多种类型，于是他想知道每种类型的图有多少个，但是由于他只有十个手指头、十个脚趾头和一个脑袋，所以他数不过来，只好请你来帮忙。
 content图的定义：图$G$是一个有序二元组$(V,E)$，其中$V$称为点集，$E$称为边集">
-<meta property="og:updated_time" content="2016-07-16T08:33:53.953Z">
+<meta property="og:updated_time" content="2016-07-17T10:33:02.457Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="『湖南省队集训』graph">
 <meta name="twitter:description" content="题目backgrounds夕阳镇第五幼儿园的zhangzj发现每个幼儿园的好♂友关系都会构成一个图，由于身处图中，zhangzj决定研究这些图，经过1s的思考，他发现这些图有很多种类型，于是他想知道每种类型的图有多少个，但是由于他只有十个手指头、十个脚趾头和一个脑袋，所以他数不过来，只好请你来帮忙。
@@ -308,6 +308,9 @@ content图的定义：图$G$是一个有序二元组$(V,E)$，其中$V$称为点
 <p>对于$50\%$的数据，$n_1,n_2 \leq 10^7$，$n_5 \leq 10^9$，$n_3,n_4,n_6,n_7 \leq 100$。</p>
 <p>对于$100\%$的数据，$1 \leq n_1,n_2,n_5 \leq 10^{18}$，$n_3,n_4,n_6,n_7 \leq 1000$，$1 \leq m \leq 10^9$。</p>
 <p>对于每个测试点，如果$7$个答案中有$4$个是对的，那么可以得到$1$分。如果有$6$个是对的，那么可以得到$2$分。如果有$7$个是对的，那么可以得到满分$5$分。</p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><h4 id="有标号的无根树的个数"><a href="#有标号的无根树的个数" class="headerlink" title="有标号的无根树的个数"></a>有标号的无根树的个数</h4><p>学过prufer序列的都知道答案是$n^{n - 2}$。注意不要爆<code>long long</code>，当然$n = 1$需要特判（虽然$1^{-1}=1$但你的快速幂求不出来啊）。</p>
+<h4 id="有标号的有根树的个数"><a href="#有标号的有根树的个数" class="headerlink" title="有标号的有根树的个数"></a>有标号的有根树的个数</h4><p>无根树随便挑一个根就好了，不难证明这是不重不漏的。答案就是$n^{n - 1}$。</p>
+<h4 id="无标号的无根树的个数"><a href="#无标号的无根树的个数" class="headerlink" title="无标号的无根树的个数"></a>无标号的无根树的个数</h4><p>直接做似乎不太好做，我们不妨假设我们已经会求无标号的有根树个数了，现在只要考虑减去在不规定根节点时同构的情况。</p>
 
       
     </div>
@@ -339,7 +342,7 @@ content图的定义：图$G$是一个有序二元组$(V,E)$，其中$V$称为点
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目"><span class="toc-number">1.</span> <span class="toc-text">题目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#backgrounds"><span class="toc-number">1.1.</span> <span class="toc-text">backgrounds</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#content"><span class="toc-number">1.2.</span> <span class="toc-text">content</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#input-format"><span class="toc-number">1.3.</span> <span class="toc-text">input format</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#output-format"><span class="toc-number">1.4.</span> <span class="toc-text">output format</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sample-input"><span class="toc-number">1.5.</span> <span class="toc-text">sample input</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sample-output"><span class="toc-number">1.6.</span> <span class="toc-text">sample output</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#constraints"><span class="toc-number">1.7.</span> <span class="toc-text">constraints</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目"><span class="toc-number">1.</span> <span class="toc-text">题目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#backgrounds"><span class="toc-number">1.1.</span> <span class="toc-text">backgrounds</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#content"><span class="toc-number">1.2.</span> <span class="toc-text">content</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#input-format"><span class="toc-number">1.3.</span> <span class="toc-text">input format</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#output-format"><span class="toc-number">1.4.</span> <span class="toc-text">output format</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sample-input"><span class="toc-number">1.5.</span> <span class="toc-text">sample input</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sample-output"><span class="toc-number">1.6.</span> <span class="toc-text">sample output</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#constraints"><span class="toc-number">1.7.</span> <span class="toc-text">constraints</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题解"><span class="toc-number">2.</span> <span class="toc-text">题解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#有标号的无根树的个数"><span class="toc-number">2.1.</span> <span class="toc-text">有标号的无根树的个数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#有标号的有根树的个数"><span class="toc-number">2.2.</span> <span class="toc-text">有标号的有根树的个数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无标号的无根树的个数"><span class="toc-number">2.3.</span> <span class="toc-text">无标号的无根树的个数</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
