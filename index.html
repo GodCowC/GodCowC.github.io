@@ -303,6 +303,59 @@
 
 
   
+    <article id="post-HNSDFZ-planet" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/17/HNSDFZ-planet/" class="article-date">
+      <time datetime="2016-07-17T08:10:41.000Z" itemprop="datePublished">2016-07-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/17/HNSDFZ-planet/">HNSDFZ-planet</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HNSDFZ-clan" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -361,7 +414,7 @@
 <h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$10\%$的数据，$l \leq 10$；</p>
 <p>对于$30\%$的数据，$l \leq 30$；</p>
 <p>对于另外$20\%$的数据， 只包含“父亲，母亲，儿子，女儿，丈夫，妻子，兄弟，姐妹”关系，且兄弟姐妹关系个数不超过$20$个；</p>
-<p>对于$100\%$的数据，$l \leq 100$，不保证一定存在一种情况满足关系式。</p>
+<p>对于$100\%$的数据，$0 \leq l \leq 100$，不保证一定存在一种情况满足关系式。</p>
 
       
     </div>
@@ -591,82 +644,6 @@ bb
 
 
   
-    <article id="post-HNSDFZ-game" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/16/HNSDFZ-game/" class="article-date">
-      <time datetime="2016-07-16T07:00:00.000Z" itemprop="datePublished">2016-07-16</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/16/HNSDFZ-game/">『湖南省队集训』game</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="backgrounds"><a href="#backgrounds" class="headerlink" title="backgrounds"></a>backgrounds</h4><p>夕阳镇第五幼儿园的zhangzj被他的好♂友带进了puzzle game 的坑，其中他最感兴趣的是netgame，<del>$1 \times 1$的格子他一眼秒，</del>但由于幼儿园有上机时间限制，所以他想很快找出最优解，但是他忙着找更多的好♂友，只好请你来帮忙。</p>
-<h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><p>有一个$n \times m$的网格，除了最左边一列和最右边一列，每个格子上有一些管道，需要通过旋转一些格子使得最右边一列上的一些格子能够通过管道与至少一个最左边一列的格子连通。每个格子上的管道都是由一个中间管道扩展到四个方向中的若干个，也就是说，这个格子的四个方向上如果有管道，那么这些方向是联通的。例如上方、左方和右方有管道，那么这三个方向的格子如果有朝向这个格子的管道，就可以通过这个格子上的管道连通。</p>
-<p>比如这样：</p>
-<center><br><img src="http://o8jc7x6dc.bkt.clouddn.com/heiheihei.png" alt=""><br></center>
-
-<p>问最右边一列的格子最多有几个同时与最左边一列的格子连通。</p>
-<h4 id="input-format"><a href="#input-format" class="headerlink" title="input format"></a>input format</h4><p>多组数据。</p>
-<p>对于每组数据，第一行有两个整数$n$和$m$，为网格图的行数和列数。</p>
-<p>下接$n$行，每行$m-2$个整数$x_{i,j}$，表示网格图第$i$行第$j+1$列的管道，如果$x_{i,j}\ {\rm and}\ 1 = 1$，那么向上有管道，如果$x_{i,j}\ {\rm and}\ 2 = 2$，那么向右有管道，如果$x_{i,j}\ {\rm and}\ 4 = 4$，那么向下有管道，如果$x_{i,j}\ {\rm and}\ 8 = 8$，那么向左有管道。</p>
-<h4 id="output-format"><a href="#output-format" class="headerlink" title="output format"></a>output format</h4><p>若干行，每行一个数，表示一组数据的答案。</p>
-<h4 id="sample-input"><a href="#sample-input" class="headerlink" title="sample input"></a>sample input</h4><pre><code>1 3
-5
-</code></pre><h4 id="sample-output"><a href="#sample-output" class="headerlink" title="sample output"></a>sample output</h4><pre><code>1
-</code></pre><h4 id="sample-explanation"><a href="#sample-explanation" class="headerlink" title="sample explanation"></a>sample explanation</h4><p>将中间的格子旋转成向左和向右连通即可。</p>
-<h4 id="constraints"><a href="#constraints" class="headerlink" title="constraints"></a>constraints</h4><p>对于$20\%$的数据，$n \times (m - 2) \leq 8$。</p>
-<p>对于另外$10\%$的数据，$n = 1$。</p>
-<p>对于另外$10\%$的数据，$m = 3$。</p>
-<p>对于$100\%$的数据，$1 \leq n \leq 9$，$3 \leq m \leq 20$，数据组数在$5$以内。</p>
-<p>数据有梯度，大家可以尽情骗分。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
     <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -712,6 +689,82 @@ bb
 <p>对于另外$10\\%$的数据，$n = 1$。</p>
 <p>对于另外$10\\%$的数据，$m = 3$。</p>
 <p>对于$100\\%$的数据，$1 \\leq n \\leq 9$，$3 \\leq m \\leq 20$，数据组数在$5$以内。</p>
+<p>数据有梯度，大家可以尽情骗分。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-HNSDFZ-game" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/16/HNSDFZ-game/" class="article-date">
+      <time datetime="2016-07-16T07:00:00.000Z" itemprop="datePublished">2016-07-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/16/HNSDFZ-game/">『湖南省队集训』game</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="backgrounds"><a href="#backgrounds" class="headerlink" title="backgrounds"></a>backgrounds</h4><p>夕阳镇第五幼儿园的zhangzj被他的好♂友带进了puzzle game 的坑，其中他最感兴趣的是netgame，<del>$1 \times 1$的格子他一眼秒，</del>但由于幼儿园有上机时间限制，所以他想很快找出最优解，但是他忙着找更多的好♂友，只好请你来帮忙。</p>
+<h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><p>有一个$n \times m$的网格，除了最左边一列和最右边一列，每个格子上有一些管道，需要通过旋转一些格子使得最右边一列上的一些格子能够通过管道与至少一个最左边一列的格子连通。每个格子上的管道都是由一个中间管道扩展到四个方向中的若干个，也就是说，这个格子的四个方向上如果有管道，那么这些方向是联通的。例如上方、左方和右方有管道，那么这三个方向的格子如果有朝向这个格子的管道，就可以通过这个格子上的管道连通。</p>
+<p>比如这样：</p>
+<center><br><img src="http://o8jc7x6dc.bkt.clouddn.com/heiheihei.png" alt=""><br></center>
+
+<p>问最右边一列的格子最多有几个同时与最左边一列的格子连通。</p>
+<h4 id="input-format"><a href="#input-format" class="headerlink" title="input format"></a>input format</h4><p>多组数据。</p>
+<p>对于每组数据，第一行有两个整数$n$和$m$，为网格图的行数和列数。</p>
+<p>下接$n$行，每行$m-2$个整数$x_{i,j}$，表示网格图第$i$行第$j+1$列的管道，如果$x_{i,j}\ {\rm and}\ 1 = 1$，那么向上有管道，如果$x_{i,j}\ {\rm and}\ 2 = 2$，那么向右有管道，如果$x_{i,j}\ {\rm and}\ 4 = 4$，那么向下有管道，如果$x_{i,j}\ {\rm and}\ 8 = 8$，那么向左有管道。</p>
+<h4 id="output-format"><a href="#output-format" class="headerlink" title="output format"></a>output format</h4><p>若干行，每行一个数，表示一组数据的答案。</p>
+<h4 id="sample-input"><a href="#sample-input" class="headerlink" title="sample input"></a>sample input</h4><pre><code>1 3
+5
+</code></pre><h4 id="sample-output"><a href="#sample-output" class="headerlink" title="sample output"></a>sample output</h4><pre><code>1
+</code></pre><h4 id="sample-explanation"><a href="#sample-explanation" class="headerlink" title="sample explanation"></a>sample explanation</h4><p>将中间的格子旋转成向左和向右连通即可。</p>
+<h4 id="constraints"><a href="#constraints" class="headerlink" title="constraints"></a>constraints</h4><p>对于$20\%$的数据，$n \times (m - 2) \leq 8$。</p>
+<p>对于另外$10\%$的数据，$n = 1$。</p>
+<p>对于另外$10\%$的数据，$m = 3$。</p>
+<p>对于$100\%$的数据，$1 \leq n \leq 9$，$3 \leq m \leq 20$，数据组数在$5$以内。</p>
 <p>数据有梯度，大家可以尽情骗分。</p>
 
       
@@ -1060,68 +1113,6 @@ bb
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
     </div>
 
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/14/hello-world/" class="article-date">
-      <time datetime="2016-07-14T08:52:17.562Z" itemprop="datePublished">2016-07-14</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
       
       <div class="clearfix"></div>
     </div>
