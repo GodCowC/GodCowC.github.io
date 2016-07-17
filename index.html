@@ -106,10 +106,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
                     </ul>
@@ -236,7 +236,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
   
@@ -286,6 +286,95 @@
         <p class="article-more-link">
           <a href="/2016/07/30/Water-Problems/#more">more >></a>
         </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-HNSDFZ-clan" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/17/HNSDFZ-clan/" class="article-date">
+      <time datetime="2016-07-17T06:00:00.000Z" itemprop="datePublished">2016-07-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/17/HNSDFZ-clan/">『湖南省队集训』clan</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
+<p>最简单的往往最复杂</p>
+</blockquote>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>有这么一个人叫做农民王Q，他有一个家谱，现在他在想自己和上古农民王U到底有多大的关系，关系式中有这么些个亲戚：</p>
+<p>“father, mother, son, daughter, husband, wife, brother, sister, grandfather, grandmother, grandson, granddaughter, uncle, aunt, nephew, niece”</p>
+<p>中文意思分别是：<br>“父亲，母亲，儿子，女儿，丈夫，妻子，兄弟，姐妹，爷爷，奶奶，孙子，孙女，叔叔，阿姨，侄儿，侄女”</p>
+<p>对于亲戚关系，满足以下几点：</p>
+<ol>
+<li>Q的兄弟等同于Q的父亲的或者母亲的儿子（Q自己除外）；</li>
+<li>Q的爷爷等同于Q的父亲的或者母亲的父亲；</li>
+<li>Q的孙子等同于Q的儿子的或者女儿的儿子；</li>
+<li>Q的叔叔等同于Q的父亲的或者母亲的兄弟；</li>
+<li>Q的侄儿等同于Q的兄弟的或者姐妹的儿子；</li>
+<li>上述规则对于姐妹，奶奶，孙女，阿姨和侄女类似。</li>
+</ol>
+<p>血缘关系的定义如下：</p>
+<ol>
+<li>Q到Q的父亲，Q的母亲，Q的儿子或者Q的女儿的距离为1；</li>
+<li>Q到Q的丈夫（妻子）的距离为0；</li>
+<li>Q到U的距离等于在上述规则下推断出的Q到U的最短距离。</li>
+</ol>
+<p>由于一条关系会出现很多种情况，所以农民王想知道他跟上古农民王的血缘关系距离究竟有多少种？分别是多少？请你帮帮他好吗？</p>
+<p>注明：不会出现的关系包括收养，亲戚间结婚（家族树中无环），离婚，复婚，重婚，同性恋等。</p>
+<h4 id="输入数据"><a href="#输入数据" class="headerlink" title="输入数据"></a>输入数据</h4><p>第$1$行包括一个字符串表示氏族谱图上的关系式，格式如下：</p>
+<p><code>Q is U’s relation’s relation’s … relation</code></p>
+<p>设关系式中出现的亲戚关系总个数为$l$。</p>
+<h4 id="输出数据"><a href="#输出数据" class="headerlink" title="输出数据"></a>输出数据</h4><p>第$1$行一个整数$c$，表示一共有多少种情况。</p>
+<p>第$2$行$c$个数，表示每种情况的距离，空格隔开，按升序输出。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$10\%$的数据，$l \leq 10$；</p>
+<p>对于$30\%$的数据，$l \leq 30$；</p>
+<p>对于另外$20\%$的数据， 只包含“父亲，母亲，儿子，女儿，丈夫，妻子，兄弟，姐妹”关系，且兄弟姐妹关系个数不超过$20$个；</p>
+<p>对于$100\%$的数据，$l \leq 100$，不保证一定存在一种情况满足关系式。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
       
       <div class="clearfix"></div>
     </div>
@@ -1050,68 +1139,6 @@ bb
 
 
   
-    <article id="post-HApeixunguncu" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/14/HApeixunguncu/" class="article-date">
-      <time datetime="2016-07-14T08:52:17.556Z" itemprop="datePublished">2016-07-14</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/14/HApeixunguncu/">河南省队集训滚粗记</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>已完结。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/07/14/HApeixunguncu/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1126,14 +1153,14 @@ bb
                 2016 常可
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
+                        <span id="site-visit" >Site Visitors: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -1143,7 +1170,7 @@ bb
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
+                        <span id="page-visit">Page Hits: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -1197,9 +1224,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">

@@ -106,10 +106,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
                     </ul>
@@ -236,9 +236,93 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-HNSDFZ-sm" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/12/HNSDFZ-sm/" class="article-date">
+      <time datetime="2016-07-12T06:00:00.000Z" itemprop="datePublished">2016-07-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/12/HNSDFZ-sm/">『湖南省队集训』永不落幕的zy</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>人们的感情像洪水一样袭来，头晕目眩。</p>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>zy 是一位拥有“共感”能力的少年，他总是能有意无意地感知别人的心情。 sm 是一位有着“心墙”的少女，她的感情无法传递出去。就像命运一般，他们相遇了，仿佛 zy（的能力）就是为了 sm 而存在一样（事实上也确实如此）。</p>
+<p>sm 的心墙由许多迷茫组成，每个迷茫都希望从$X$轴上某一点去到另一点，而只有 zy 能消除 sm 的迷茫。面对数量如此庞大的迷茫， zy 不曾想要放弃，但有些迷失了方向。</p>
+<p>假设现在时间是$0$， zy 在心墙的$1$位置， zy 每单位时间的移动速度是$1$。</p>
+<p>若现在 zy 携带的迷茫想要去的地点和心墙上剩下的迷茫中在他右边的个数大于等于左边，则 zy 会向右移动，反之向左。若现在 sm 没有任何迷茫，则 zy 原地不动。现在 zy 想<br>知道，组成心墙的每个迷茫分别在什么时候消失。</p>
+<p>为了尽快地让 zy 能拥抱 sm，请你帮帮他。</p>
+<h4 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h4><p>第一行两个数$N, M$表示迷茫的数量和心墙的大小。接下来$N$行，每行$3$个整数，$t, a, b$，表示这个迷茫出现在时刻$t$，希望从$a$到$b$。</p>
+<h4 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h4><p>$N$行$N$个整数，表示每个迷茫分别在什么时候消失。</p>
+<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>2 10
+1 2 5
+7 4 5
+</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>5
+9
+</code></pre><h4 id="样例解释"><a href="#样例解释" class="headerlink" title="样例解释"></a>样例解释</h4><p>时刻$1$，有迷茫出现了！</p>
+<p>时刻$2$， zy 移动到了位置$2$。</p>
+<p>时刻$5$， zy 移动到了位置$5$，迷茫消失。</p>
+<p>时刻$7$，有迷茫出现了！</p>
+<p>时刻$8$， zy 移动到了位置$4$。</p>
+<p>时刻$9$， zy 移动到了位置$5$，迷茫消失。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$30\%$的数据，$N, M, t \leq 100$；</p>
+<p>对于$60\%$的数据，$N, M, t \leq 10000$；</p>
+<p>对于$100\%$的数据，$N, M, t \leq 100000$。</p>
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>我们的落幕，是新的开始。 </p>
+<h4 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h4><center><br><img src="http://o8jc7x6dc.bkt.clouddn.com/sm.jpg" alt=""><br></center>
+
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>题意非常的玄妙，形象地说，就是公交车在路上跑，一段时间后会出现一个指定出发地和目的地的乘客，如果公交车右边的未上车乘客的出发地个数和车上乘客的目的地个数之和大于等于左边的，那就往右跑，否则往左跑，注意这是实时更新的，每出现一位乘客或一位乘客下车都可能导致方向改变。然后求每位乘客下车时间。</p>
+<p>用线段树记录所有迷茫的位置，支持插入，删除（注意如果是乘客上车的话还要再插入一个目的地，要区分上下车的情况），区间内点数询问，求前驱后继，注意实现细节，特别是对于事件点重合的情况要非常小心。这样按照题意模拟运动就好，当然一次不止运动一个单位，在事件点不变的情况下能走多远走多远。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cctype&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 100010</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">readint</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> x = <span class="number">0</span>, c;</div><div class="line">	<span class="keyword">while</span> (!<span class="built_in">isdigit</span>(c = getchar()));</div><div class="line">	<span class="keyword">do</span></div><div class="line">		x = x * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">	<span class="keyword">while</span> (<span class="built_in">isdigit</span>(c = getchar()));</div><div class="line">	<span class="keyword">return</span> x;</div><div class="line">&#125;</div><div class="line"><span class="keyword">int</span> n, m;</div><div class="line"><span class="keyword">struct</span> mimang</div><div class="line">&#123;</div><div class="line">	<span class="keyword">long</span> <span class="keyword">long</span> t;</div><div class="line">	<span class="keyword">int</span> a, b, id;</div><div class="line">	mimang() &#123;&#125;</div><div class="line">	mimang(<span class="keyword">long</span> <span class="keyword">long</span> t, <span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> id) : t(t), a(a), b(b), id(id) &#123;&#125;</div><div class="line">&#125;;</div><div class="line"><span class="keyword">bool</span> <span class="keyword">operator</span> &lt;(mimang x, mimang y)</div><div class="line">&#123;</div><div class="line">	<span class="keyword">if</span> (x.t != y.t)</div><div class="line">		<span class="keyword">return</span> (x.t &lt; y.t);</div><div class="line">	<span class="keyword">if</span> (x.a != y.a)</div><div class="line">		<span class="keyword">return</span> (x.a &lt; y.a);</div><div class="line">	<span class="keyword">if</span> (x.b != y.b)</div><div class="line">		<span class="keyword">return</span> (x.b &lt; y.b);</div><div class="line">	<span class="keyword">return</span> (x.id &lt; y.id);</div><div class="line">&#125;</div><div class="line">mimang q[MAXN];</div><div class="line"><span class="keyword">struct</span> node</div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> sum, minpos, maxpos, l, r;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; ms;</div><div class="line">	node () &#123;&#125;</div><div class="line">	node(<span class="keyword">int</span> l, <span class="keyword">int</span> r) : l(l), r(r), sum(<span class="number">0</span>), minpos(<span class="number">200100</span>), maxpos(<span class="number">0</span>) &#123;&#125;</div><div class="line">&#125;;</div><div class="line">node segtree[MAXN &lt;&lt; <span class="number">2</span>];</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> x)</span></span></div><div class="line">&#123;</div><div class="line">	segtree[x].sum = segtree[x &lt;&lt; <span class="number">1</span>].sum + segtree[(x &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>].sum;</div><div class="line">	segtree[x].minpos = min(segtree[x &lt;&lt; <span class="number">1</span>].minpos, segtree[(x &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>].minpos);</div><div class="line">	segtree[x].maxpos = max(segtree[x &lt;&lt; <span class="number">1</span>].maxpos, segtree[(x &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>].maxpos);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span></span></div><div class="line">&#123;</div><div class="line">	segtree[now] = node(l, r);</div><div class="line">	<span class="keyword">if</span> (l &lt; r)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">int</span> mid = l + (r - l) / <span class="number">2</span>;</div><div class="line">		build(now &lt;&lt; <span class="number">1</span>, l, mid);</div><div class="line">		build((now &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>, mid + <span class="number">1</span>, r);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> nl = segtree[now].l, nr = segtree[now].r;</div><div class="line">	<span class="keyword">if</span> (l &lt;= nl &amp;&amp; r &gt;= nr)</div><div class="line">		<span class="keyword">return</span> segtree[now].sum;</div><div class="line">	<span class="keyword">if</span> (l &gt; nr || r &lt; nl)</div><div class="line">		<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">	<span class="keyword">return</span> query(now &lt;&lt; <span class="number">1</span>, l, r) + query((now &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>, l, r);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos, <span class="keyword">int</span> id)</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> nl = segtree[now].l, nr = segtree[now].r;</div><div class="line">	<span class="keyword">if</span> (nl == nr)</div><div class="line">	&#123;</div><div class="line">		segtree[now].sum++;</div><div class="line">		segtree[now].minpos = segtree[now].maxpos = nl;</div><div class="line">		segtree[now].ms.push_back(id);</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">int</span> mid = nl + (nr - nl) / <span class="number">2</span>;</div><div class="line">	<span class="keyword">if</span> (pos &lt;= mid)</div><div class="line">		insert(now &lt;&lt; <span class="number">1</span>, pos, id);</div><div class="line">	<span class="keyword">else</span></div><div class="line">		insert((now &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>, pos, id);</div><div class="line">	update(now);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">workl</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos)</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> nl = segtree[now].l, nr = segtree[now].r;</div><div class="line">	<span class="keyword">if</span> (nl == nr)</div><div class="line">		<span class="keyword">return</span> segtree[now].maxpos;</div><div class="line">	<span class="keyword">int</span> mid = nl + (nr - nl) / <span class="number">2</span>;</div><div class="line">	<span class="keyword">if</span> (pos &lt;= mid)</div><div class="line">		<span class="keyword">return</span> workl(now &lt;&lt; <span class="number">1</span>, pos);</div><div class="line">	<span class="keyword">else</span></div><div class="line">		<span class="keyword">return</span> max(workl(now &lt;&lt; <span class="number">1</span> | <span class="number">1</span>, pos), segtree[now &lt;&lt; <span class="number">1</span>].maxpos);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">workr</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos)</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> nl = segtree[now].l, nr = segtree[now].r;</div><div class="line">	<span class="keyword">if</span> (nl == nr)</div><div class="line">		<span class="keyword">return</span> segtree[now].minpos;</div><div class="line">	<span class="keyword">int</span> mid = nl + (nr - nl) / <span class="number">2</span>;</div><div class="line">	<span class="keyword">if</span> (pos &lt;= mid)</div><div class="line">		<span class="keyword">return</span> min(workr(now &lt;&lt; <span class="number">1</span>, pos), segtree[(now &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>].minpos);</div><div class="line">	<span class="keyword">else</span></div><div class="line">		<span class="keyword">return</span> workr((now &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>, pos);</div><div class="line">&#125;</div><div class="line"><span class="keyword">long</span> <span class="keyword">long</span> now, pos;</div><div class="line"><span class="keyword">long</span> <span class="keyword">long</span> time, ans[MAXN];</div><div class="line"><span class="keyword">int</span> cnt;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos)</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> nl = segtree[now].l, nr = segtree[now].r;</div><div class="line">	<span class="keyword">if</span> (nl == nr)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)segtree[now].ms.size(); i++)</div><div class="line">		&#123;</div><div class="line">			<span class="keyword">int</span> v = segtree[now].ms[i];</div><div class="line">			<span class="keyword">if</span> (v &gt; <span class="number">0</span>)</div><div class="line">				insert(<span class="number">1</span>, q[v].b, -v);</div><div class="line">			<span class="keyword">else</span></div><div class="line">				ans[q[-v].id] = time, cnt++;</div><div class="line">		&#125;</div><div class="line">		segtree[now].ms.clear();</div><div class="line">		segtree[now] = node(pos, pos);</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">int</span> mid = nl + (nr - nl) / <span class="number">2</span>;</div><div class="line">	<span class="keyword">if</span> (pos &lt;= mid)</div><div class="line">		clear(now &lt;&lt; <span class="number">1</span>, pos);</div><div class="line">	<span class="keyword">else</span></div><div class="line">		clear((now &lt;&lt; <span class="number">1</span>) | <span class="number">1</span>, pos);</div><div class="line">	update(now);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	freopen(<span class="string">"sm.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line">	freopen(<span class="string">"sm.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</div><div class="line">	n = readint();</div><div class="line">	m = readint();</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">int</span> t = readint();</div><div class="line">		<span class="keyword">int</span> a = readint();</div><div class="line">		<span class="keyword">int</span> b = readint();</div><div class="line">		q[i] = mimang(t, a, b, i);</div><div class="line">	&#125;</div><div class="line">	cnt = <span class="number">0</span>, now = <span class="number">1</span>, time = <span class="number">0</span>, pos = <span class="number">0</span>;</div><div class="line">	sort(q + <span class="number">1</span>, q + n + <span class="number">1</span>);</div><div class="line">	build(<span class="number">1</span>, <span class="number">1</span>, m);</div><div class="line">	<span class="keyword">while</span> (cnt &lt; n)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">if</span> (query(<span class="number">1</span>, <span class="number">1</span>, m) == <span class="number">0</span>)</div><div class="line">		&#123;</div><div class="line">			<span class="keyword">if</span> (pos == n)</div><div class="line">				<span class="keyword">break</span>;</div><div class="line">			time = q[pos + <span class="number">1</span>].t;</div><div class="line">			pos++;</div><div class="line">			<span class="keyword">while</span> (pos &lt;= n &amp;&amp; q[pos].t == time)</div><div class="line">			&#123;</div><div class="line">				insert(<span class="number">1</span>, q[pos].a, pos);</div><div class="line">				pos++;</div><div class="line">			&#125;</div><div class="line">			pos--;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">else</span></div><div class="line">		&#123;</div><div class="line">			<span class="keyword">int</span> left = query(<span class="number">1</span>, <span class="number">1</span>, now - <span class="number">1</span>);</div><div class="line">			<span class="keyword">int</span> right = query(<span class="number">1</span>, now + <span class="number">1</span>, m);</div><div class="line">			<span class="keyword">long</span> <span class="keyword">long</span> ls;</div><div class="line">			<span class="keyword">if</span> (right &gt;= left)</div><div class="line">				ls = workr(<span class="number">1</span>, now);</div><div class="line">			<span class="keyword">else</span></div><div class="line">				ls = workl(<span class="number">1</span>, now);</div><div class="line">			<span class="keyword">if</span> (pos == n || time + <span class="built_in">abs</span>(now - ls) &lt;= q[pos + <span class="number">1</span>].t)</div><div class="line">			&#123;</div><div class="line">				time = time + <span class="built_in">abs</span>(now - ls);</div><div class="line">				now = ls;</div><div class="line">				clear(<span class="number">1</span>, ls);				</div><div class="line">				<span class="keyword">if</span> (time == q[pos + <span class="number">1</span>].t)</div><div class="line">				&#123;</div><div class="line">					pos++;</div><div class="line">					<span class="keyword">while</span> (pos &lt;= n &amp;&amp; q[pos].t == time)</div><div class="line">					&#123;</div><div class="line">						insert(<span class="number">1</span>, q[pos].a, pos);</div><div class="line">						pos++;</div><div class="line">					&#125;</div><div class="line">					pos--;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">else</span></div><div class="line">			&#123;</div><div class="line">				pos++;</div><div class="line">				<span class="keyword">if</span> (right &gt;= left)</div><div class="line">					now += q[pos].t - time;</div><div class="line">				<span class="keyword">else</span></div><div class="line">					now -= q[pos].t - time;</div><div class="line">				time = q[pos].t;			</div><div class="line">				<span class="keyword">while</span> (pos &lt;= n &amp;&amp; q[pos].t == time)</div><div class="line">				&#123;</div><div class="line">					insert(<span class="number">1</span>, q[pos].a, pos);</div><div class="line">					pos++;</div><div class="line">				&#125;</div><div class="line">				pos--;				</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans[i]);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-HNSDFZ-philosopher" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -859,64 +943,6 @@
 
 
   
-    <article id="post-20160615-rzz" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/15/20160615-rzz/" class="article-date">
-      <time datetime="2016-06-15T08:00:00.000Z" itemprop="datePublished">2016-06-15</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/15/20160615-rzz/">『Noi2016十连测第一场 - 模范学长』</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><a href="http://o8jc7x6dc.bkt.clouddn.com/20160615problems.pdf">pdf版题面</a>  <a href="http://begin.lydsy.com/JudgeOnline/problem.php?id=3005">在线提交（需要权限）</a></p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a href="/2016/06/15/20160615-rzz/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
@@ -931,14 +957,14 @@
                 2016 常可
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
+                        <span id="site-visit" >Site Visitors: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -948,7 +974,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
+                        <span id="page-visit">Page Hits: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -1002,9 +1028,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
