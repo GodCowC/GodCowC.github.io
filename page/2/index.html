@@ -240,6 +240,103 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-HNSDFZ-graph" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/16/HNSDFZ-graph/" class="article-date">
+      <time datetime="2016-07-16T06:00:00.000Z" itemprop="datePublished">2016-07-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/16/HNSDFZ-graph/">『湖南省队集训』graph</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="backgrounds"><a href="#backgrounds" class="headerlink" title="backgrounds"></a>backgrounds</h4><p>夕阳镇第五幼儿园的zhangzj发现每个幼儿园的好♂友关系都会构成一个图，由于身处图中，zhangzj决定研究这些图，经过1s的思考，他发现这些图有很多种类型，于是他想知道每种类型的图有多少个，但是由于他只有十个手指头、十个脚趾头和一个脑袋，所以他数不过来，只好请你来帮忙。</p>
+<h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><p>图的定义：图$G$是一个有序二元组$(V,E)$，其中$V$称为点集，$E$称为边集，$E$与$V$不相交。它们亦可写成$(G)$和$E(G)$。</p>
+<p>此题中图不允许有重边和自环。</p>
+<p>树的定义：树是一种特殊的图，它是一个连通图，且任意删去一条边，它就不连通。</p>
+<p>两个图同构的定义：</p>
+<p>设这两个图为$G_1=(V_1,E_1)$，$G_2=(V_2,E_2)$：</p>
+<ol>
+<li>点数相同。</li>
+<li>如果是一个有标号的图，那么他们同构等价于$E_1=E_2$。</li>
+<li>如果是一个无标号的图，且存在一种对于$G_1$和$G_2$的标号使得新的两个有标号图同构，那么它们同构。</li>
+</ol>
+<p>问题描述：</p>
+<ol>
+<li>给定一个整数$n$，求$n$个点的有标号的无根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的有根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的无标号的无根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的无标号的有根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的所有点的度数均为偶数的图的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的欧拉图的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的二分图的个数。</li>
+</ol>
+<p>求方案数对$m$取模的结果。<strong>保证$m$是质数</strong>。</p>
+<h4 id="input-format"><a href="#input-format" class="headerlink" title="input format"></a>input format</h4><p>一行八个数$m,n_1,n_2,n_3,n_4,n_5,n_6,n_7$，分别为原问题中的$m$和七个问题的$n$。</p>
+<h4 id="output-format"><a href="#output-format" class="headerlink" title="output format"></a>output format</h4><p>一行七个数，表示七个问题的答案。</p>
+<h4 id="sample-input"><a href="#sample-input" class="headerlink" title="sample input"></a>sample input</h4><pre><code>5 2 2 2 2 2 2 2
+</code></pre><h4 id="sample-output"><a href="#sample-output" class="headerlink" title="sample output"></a>sample output</h4><pre><code>1 2 1 1 1 0 2
+</code></pre><h4 id="constraints"><a href="#constraints" class="headerlink" title="constraints"></a>constraints</h4><p>对于$10\%$的数据，$n_1,n_2,n_3,n_4,n_5,n_6,n_7 \leq 5$。</p>
+<p>对于$30\%$的数据，$n_1,n_2,n_5 \leq 1000$，$n_3,n_4,n_6,n_7 \leq 10$。</p>
+<p>对于$50\%$的数据，$n_1,n_2 \leq 10^7$，$n_5 \leq 10^9$，$n_3,n_4,n_6,n_7 \leq 100$。</p>
+<p>对于$100\%$的数据，$1 \leq n_1,n_2,n_5 \leq 10^{18}$，$n_3,n_4,n_6,n_7 \leq 1000$，$1 \leq m \leq 10^9$。</p>
+<p>对于每个测试点，如果$7$个答案中有$4$个是对的，那么可以得到$1$分。如果有$6$个是对的，那么可以得到$2$分。如果有$7$个是对的，那么可以得到满分$5$分。</p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><h4 id="有标号的无根树的个数"><a href="#有标号的无根树的个数" class="headerlink" title="有标号的无根树的个数"></a>有标号的无根树的个数</h4><p>学过prufer序列的都知道答案是$n^{n - 2}$。注意不要爆<code>long long</code>，当然$n = 1$需要特判（虽然$1^{-1}=1$但你的快速幂求不出来啊）。</p>
+<h4 id="有标号的有根树的个数"><a href="#有标号的有根树的个数" class="headerlink" title="有标号的有根树的个数"></a>有标号的有根树的个数</h4><p>无根树随便挑一个根就好了，不难证明这是不重不漏的。答案就是$n^{n - 1}$。</p>
+<h4 id="无标号的无根树的个数"><a href="#无标号的无根树的个数" class="headerlink" title="无标号的无根树的个数"></a>无标号的无根树的个数</h4><p>在做之前，先假设我们会求无标号的有根树个数，至于怎么求等会再说。（嗯我就是故意按照题目顺序的）</p>
+<p>先设由$n$个结点组成的无标号的有根树有$a_n$个。</p>
+<p>直接做似乎不太好做，我们不妨换个角度，考虑容斥。我们只需要求出因重复而需要减去的有根树的个数即可。</p>
+<p>在所有的有根树中，选取连接根结点和它的第一个儿子的一条边，它两端可以看做是两棵有根树连接上来的。那么，两端的树交换过来的话，仍然是一棵同构的无根树，因此枚举一端的树的大小，就得到如下的式子：</p>
+<p>$$ans_n = a<em>n - \sum</em>{i = 1}^{\lfloor \frac{n}{2}\rfloor}a<em>ia</em>{n - i}$$</p>
+<p>看起来做完了，但是如果$n$是偶数，可能会出现两棵树完全一样的情况，这相当于我们多减了，需要加回来。如果两棵树大小都是$\dfrac{n}{2}$，那么它们不同的情况只有$\dfrac{a<em>{\frac{n}{2}}(a</em>{\frac{n}{2}} - 1)}{2}$种，但我们减了$a<em>{\frac{n}{2}}^2$种，因此还要加回来$\dfrac{a</em>{\frac{n}{2}}(a_{\frac{n}{2}} + 1)}{2}$种。</p>
+<p>说的有点乱，本质上就是枚举边两端的有根树大小，减去重复的，加上多减的，就完了。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HNSDFZ-tidati" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -967,90 +1064,9 @@
 
 
   
-    <article id="post-HNSDFZ-selector" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/13/HNSDFZ-selector/" class="article-date">
-      <time datetime="2016-07-13T08:00:00.000Z" itemprop="datePublished">2016-07-13</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/13/HNSDFZ-selector/">『湖南省队集训』博士的选取器</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>浏览到好图好句的时候，为了避免被删帖、封图、和谐，博士会掏出他的选取器，将好图好句框住，然后<code>Ctrl+C</code>，<code>Ctrl+V</code>。博士从初一开始坚持到现在，已经有 2GB 了。在反复地与吧主斗争之后,博士总结出了经验。</p>
-<ol>
-<li>对于一篇帖子，可以从上至下分成$N$个片段，每个片段不可分割，且只有序号相邻的片段才相邻。</li>
-<li>每次框选只能框选连续一段片段$[L,R]$，而且这连续一段片段的总字符量不能超过 $LIMIT$，否则会出错。</li>
-<li>对于每次框选与复制，耗时只与这连续一段片段中字符量最大的那一个片段有关，而且满足正比例函数关系。为了让题目简单，规定耗时等于字符量。</li>
-<li>两次框选之间的时间间隔可以视为$0$。</li>
-</ol>
-<p>正在博士总结完经验的时候，他瞅到了一篇掺杂大量好图好句的帖子。于是，一场新的战争爆发了…………战局紧张，博士想知道他的最小耗时是多少。</p>
-<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行两个整数$N$和$Limit$。</p>
-<p>接下来的$N$行，每行一个整数，代表第$I$个片段的字符量。</p>
-<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>仅一行，为博士的最小耗时。</p>
-<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>8 17
-2
-2
-2
-8
-1
-8
-2
-1
-</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>12
-</code></pre><p><em>{解释：$222/818/21,2+8+2=12$}</em></p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于$40\%$的数据，$N \leq 1000$；</p>
-<p>对于$100\%$的数据，$N \leq 300000$。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 </div>
