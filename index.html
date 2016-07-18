@@ -106,10 +106,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
                     </ul>
@@ -236,7 +236,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
   
@@ -1053,11 +1053,11 @@ bb
 
 
   
-    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-HNSDFZ-graph" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/16/1/" class="article-date">
-      <time datetime="2016-07-16T07:00:00.000Z" itemprop="datePublished">2016-07-16</time>
+      <a href="/2016/07/16/HNSDFZ-graph/" class="article-date">
+      <time datetime="2016-07-16T06:00:00.000Z" itemprop="datePublished">2016-07-16</time>
 </a>
     </div>
   
@@ -1070,7 +1070,7 @@ bb
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/16/1/">『湖南省队集训』game</a>
+      <a class="article-title" href="/2016/07/16/HNSDFZ-graph/">『湖南省队集训』graph</a>
     </h1>
   
 
@@ -1080,26 +1080,115 @@ bb
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="backgrounds"><a href="#backgrounds" class="headerlink" title="backgrounds"></a>backgrounds</h4><p>夕阳镇第五幼儿园的zhangzj被他的好♂友带进了puzzle game 的坑，其中他最感兴趣的是netgame，<del>$1 \\times 1$的格子他一眼秒，</del>但由于幼儿园有上机时间限制，所以他想很快找出最优解，但是他忙着找更多的好♂友，只好请你来帮忙。</p>
-<h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><p>有一个$n \\times m$的网格，除了最左边一列和最右边一列，每个格子上有一些管道，需要通过旋转一些格子使得最右边一列上的一些格子能够通过管道与至少一个最左边一列的格子连通。每个格子上的管道都是由一个中间管道扩展到四个方向中的若干个，也就是说，这个格子的四个方向上如果有管道，那么这些方向是联通的。例如上方、左方和右方有管道，那么这三个方向的格子如果有朝向这个格子的管道，就可以通过这个格子上的管道连通。</p>
-<p>比如这样：</p>
-<center><br><img src="http://o8jc7x6dc.bkt.clouddn.com/heiheihei.png" alt=""><br></center>
-
-<p>问最右边一列的格子最多有几个同时与最左边一列的格子连通。</p>
-<h4 id="input-format"><a href="#input-format" class="headerlink" title="input format"></a>input format</h4><p>多组数据。</p>
-<p>对于每组数据，第一行有两个整数$n$和$m$，为网格图的行数和列数。</p>
-<p>下接$n$行，每行$m\-2$个整数$x\_\{i,j\}$，表示网格图第$i$行第$j\+1$列的管道，如果$x\_\{i,j\}\\ \{\\rm and\}\\ 1 = 1$，那么向上有管道，如果$x\_\{i,j\}\\ \{\\rm and\}\\ 2 = 2$，那么向右有管道，如果$x\_\{i,j\}\\ \{\\rm and\}\\ 4 = 4$，那么向下有管道，如果$x\_\{i,j\}\\ \{\\rm and\}\\ 8 = 8$，那么向左有管道。</p>
-<h4 id="output-format"><a href="#output-format" class="headerlink" title="output format"></a>output format</h4><p>若干行，每行一个数，表示一组数据的答案。</p>
-<h4 id="sample-input"><a href="#sample-input" class="headerlink" title="sample input"></a>sample input</h4><pre><code>1 3
-5
-</code></pre><h4 id="sample-output"><a href="#sample-output" class="headerlink" title="sample output"></a>sample output</h4><pre><code>1
-</code></pre><h4 id="sample-explanation"><a href="#sample-explanation" class="headerlink" title="sample explanation"></a>sample explanation</h4><p>将中间的格子旋转成向左和向右连通即可。</p>
-<h4 id="constraints"><a href="#constraints" class="headerlink" title="constraints"></a>constraints</h4><p>对于$20\\%$的数据，$n \\times \(m \- 2\) \\leq 8$。</p>
-<p>对于另外$10\\%$的数据，$n = 1$。</p>
-<p>对于另外$10\\%$的数据，$m = 3$。</p>
-<p>对于$100\\%$的数据，$1 \\leq n \\leq 9$，$3 \\leq m \\leq 20$，数据组数在$5$以内。</p>
-<p>数据有梯度，大家可以尽情骗分。</p>
-
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="backgrounds"><a href="#backgrounds" class="headerlink" title="backgrounds"></a>backgrounds</h4><p>夕阳镇第五幼儿园的zhangzj发现每个幼儿园的好♂友关系都会构成一个图，由于身处图中，zhangzj决定研究这些图，经过1s的思考，他发现这些图有很多种类型，于是他想知道每种类型的图有多少个，但是由于他只有十个手指头、十个脚趾头和一个脑袋，所以他数不过来，只好请你来帮忙。</p>
+<h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><p>图的定义：图$G$是一个有序二元组$(V,E)$，其中$V$称为点集，$E$称为边集，$E$与$V$不相交。它们亦可写成$(G)$和$E(G)$。</p>
+<p>此题中图不允许有重边和自环。</p>
+<p>树的定义：树是一种特殊的图，它是一个连通图，且任意删去一条边，它就不连通。</p>
+<p>两个图同构的定义：</p>
+<p>设这两个图为$G_1=(V_1,E_1)$，$G_2=(V_2,E_2)$：</p>
+<ol>
+<li>点数相同。</li>
+<li>如果是一个有标号的图，那么他们同构等价于$E_1=E_2$。</li>
+<li>如果是一个无标号的图，且存在一种对于$G_1$和$G_2$的标号使得新的两个有标号图同构，那么它们同构。</li>
+</ol>
+<p>问题描述：</p>
+<ol>
+<li>给定一个整数$n$，求$n$个点的有标号的无根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的有根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的无标号的无根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的无标号的有根树的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的所有点的度数均为偶数的图的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的欧拉图的个数。</li>
+<li>给定一个整数$n$，求$n$个点的有标号的二分图的个数。</li>
+</ol>
+<p>求方案数对$m$取模的结果。<strong>保证$m$是质数</strong>。</p>
+<h4 id="input-format"><a href="#input-format" class="headerlink" title="input format"></a>input format</h4><p>一行八个数$m,n_1,n_2,n_3,n_4,n_5,n_6,n_7$，分别为原问题中的$m$和七个问题的$n$。</p>
+<h4 id="output-format"><a href="#output-format" class="headerlink" title="output format"></a>output format</h4><p>一行七个数，表示七个问题的答案。</p>
+<h4 id="sample-input"><a href="#sample-input" class="headerlink" title="sample input"></a>sample input</h4><pre><code>5 2 2 2 2 2 2 2
+</code></pre><h4 id="sample-output"><a href="#sample-output" class="headerlink" title="sample output"></a>sample output</h4><pre><code>1 2 1 1 1 0 2
+</code></pre><h4 id="constraints"><a href="#constraints" class="headerlink" title="constraints"></a>constraints</h4><p>对于$10\%$的数据，$n_1,n_2,n_3,n_4,n_5,n_6,n_7 \leq 5$。</p>
+<p>对于$30\%$的数据，$n_1,n_2,n_5 \leq 1000$，$n_3,n_4,n_6,n_7 \leq 10$。</p>
+<p>对于$50\%$的数据，$n_1,n_2 \leq 10^7$，$n_5 \leq 10^9$，$n_3,n_4,n_6,n_7 \leq 100$。</p>
+<p>对于$100\%$的数据，$1 \leq n_1,n_2,n_5 \leq 10^{18}$，$n_3,n_4,n_6,n_7 \leq 1000$，$1 \leq m \leq 10^9$。</p>
+<p>对于每个测试点，如果$7$个答案中有$4$个是对的，那么可以得到$1$分。如果有$6$个是对的，那么可以得到$2$分。如果有$7$个是对的，那么可以得到满分$5$分。</p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><h4 id="有标号的无根树的个数"><a href="#有标号的无根树的个数" class="headerlink" title="有标号的无根树的个数"></a>有标号的无根树的个数</h4><p>学过prufer序列的都知道答案是$n^{n - 2}$。注意不要爆<code>long long</code>，当然$n = 1$需要特判（虽然$1^{-1}=1$但你的快速幂求不出来啊）。</p>
+<h4 id="有标号的有根树的个数"><a href="#有标号的有根树的个数" class="headerlink" title="有标号的有根树的个数"></a>有标号的有根树的个数</h4><p>无根树随便挑一个根就好了，不难证明这是不重不漏的。答案就是$n^{n - 1}$。</p>
+<h4 id="无标号的无根树的个数"><a href="#无标号的无根树的个数" class="headerlink" title="无标号的无根树的个数"></a>无标号的无根树的个数</h4><p>在做之前，先假设我们会求无标号的有根树个数，至于怎么求等会再说。（嗯我就是故意按照题目顺序的）</p>
+<p>先设由$n$个结点组成的无标号的有根树有$a_n$个。</p>
+<p>直接做似乎不太好做，我们不妨换个角度，考虑容斥。我们只需要求出因重复而需要减去的有根树的个数即可。</p>
+<p>在所有的有根树中，选取连接根结点和它的第一个儿子的一条边，它两端可以看做是两棵有根树连接上来的。那么，两端的树交换过来的话，仍然是一棵同构的无根树，因此枚举一端的树的大小，就得到如下的式子：</p>
+<p>$$ans_n = a_n - \sum_{i = 1}^{\lfloor \frac{n}{2}\rfloor}a_ia_{n - i}$$</p>
+<p>看起来做完了，但是如果$n$是偶数，可能会出现两棵树完全一样的情况，这相当于我们多减了，需要加回来。如果两棵树大小都是$\dfrac{n}{2}$，那么它们不同的情况只有$\dfrac{a_{\frac{n}{2}}(a_{\frac{n}{2}} - 1)}{2}$种，但我们减了$a_{\frac{n}{2}}^2$种，因此还要加回来$\dfrac{a_{\frac{n}{2}}(a_{\frac{n}{2}} + 1)}{2}$种。</p>
+<p>说的有点乱，本质上就是枚举边两端的有根树大小，减去重复的，加上多减的，就完了。</p>
+<h4 id="无标号的有根树的个数"><a href="#无标号的有根树的个数" class="headerlink" title="无标号的有根树的个数"></a>无标号的有根树的个数</h4><p><strong>警告：公式恐惧症患者请连按几次PageDown键直接阅读结论。</strong></p>
+<p>既然是有根树，我们不妨枚举根的所有儿子，这样就可以通过小规模的问题来解决更大规模的问题。</p>
+<p>为了方便，记$i$个结点构成的无编号的有根树有$a_i$个。</p>
+<p>考虑大小为一定值的儿子的个数，不妨记以这些儿子为根的子树中，大小为$i$的有$c_i(\ge 0)$个，那么显然有</p>
+<p>$$\sum_{i = 1}^{n - 1}ic_i = n - 1$$</p>
+<p>对于每一种大小，显然它共有$a_i$种构造方法。在这$c_i$棵子树中，设采用第$j$种构造方法的有$x_{i,j}(\\ge 0)$种，那么</p>
+<p>$$\sum_{j = 1}^{a_i}x_{i, j} = c_i$$</p>
+<p>现在我们要求这个方程有多少组解。令$y_{i, j} = x_{i, j} + 1$，显然$y_i$的解与$x_i$的解是一一对应的，同时对于$y_i$有</p>
+<p>$$\sum_{j = 1}^{a_i}y_{i, j} = c_i + a_i, y_{i, j} > 0$$</p>
+<p>利用组合数学中的隔板法，不难得出解数为$C_{a_i + c_i - 1}^{a_i - 1}$，也就是$C_{a_i + c_i - 1}^{c_i}$。当然，不同的子树大小对应的方案数互补影响，可以利用乘法原理计算。因此，总结上面所说的内容，对于每一种划分方案${c}$，方案总数为</p>
+<p>$$\prod_{i = 1}^{n - 1}C_{a_i + c_i - 1}^{c_i}$$</p>
+<p>最后把所有的划分方案加起来，就是</p>
+<p>$$a_n = \sum_{\sum_{i = 1}^{n - 1}(ic_i) = n - 1}\left (\prod_{i = 1}^{n - 1}C_{a_i + c_i - 1}^{c_i}\right)$$</p>
+<p>这就可以递推了嘛！你要问复杂度？这取决于$\sum_{i = 1}^{n - 1}ic_i = n - 1$的解数，$n$比较小时并不是很大哦~</p>
+<p>好了不开玩笑了，这东西怎么能跑过$n = 1000$呢。要优化这算法，我们还需要更先进的姿势。为了方便，设$a_0 = 0$。</p>
+<p>考虑数列$\{a_n\}$的母函数</p>
+<p>$$A(x) = \sum_{i = 0}^{+\infty}a_ix^i$$</p>
+<p>我们想把它搞成一个好看的形式，也就是说我们要造一个有限项的函数，让它等价于这个东西。</p>
+<p>先介绍一点基础知识，下面的组合学方法可以沟通有限和无限。组合数自古以来都是定义在非负整数集上的，因为负数的阶乘没有定义。但如果我们换一种计算方法，也就是这么算：</p>
+<p>$$C_{n}^{m} = \frac{n!}{m!(n - m)!} = \frac{\prod_{i = n - m + 1}^{n}i}{\prod_{j = 1}^{m}j}$$</p>
+<p>就是从$n$开始往下算“阶乘”，从$1$开始往上算“阶乘”，各算$m$次，相除便是答案。这样计算的话，对于$n$为负数的情况也可以兼容了，因此定义</p>
+<p>$$C_{n}^{m} = \frac{\prod_{i = n - m + 1}^{n}i}{\prod_{j = 1}^{m}j}, n \in {\mathbb Z}, m \geq 0$$</p>
+<p>我们不妨试试，如果$n$为负数会算出来什么。经过一番整理，其实就是</p>
+<p>$$C_{n}^{m} = \frac{\prod_{i = n - m + 1}^{n}i}{\prod_{j = 1}^{m}j} = \frac{\prod_{i = -n}^{-n + m - 1}(-i)}{\prod_{j = 1}^{m}j} = (-1)^m\frac{\prod_{i = -n}^{-n + m - 1}i}{\prod_{j = 1}^{m}j} = (-1)^mC_{-n + m - 1}^{m}, n &lt;  0, m \geq 0$$</p>
+<p>这样我们就会算推广的组合数了。不难发现，因为定义的等价性，二项式定理似乎也可以推广，也就是</p>
+<p>$$(1 + x)^{n} = \sum_{k = 0}^{+\infty}C_{n}^{k}x^k = \sum_{k = 0}^{+\infty}(-1)^kC_{-n + k - 1}^{k}x^k, n &lt;  0$$</p>
+<p>好吧以上东西都是为了方便理解瞎BB的，但是这个式子是正确的。这一步非常关键，因为它把一个分式和一个无穷级数画上了等号。如果把$n = -1$带入，那么就是</p>
+<p>$$(1 + x)^{-1} = \sum_{k = 0}^{+\infty}(-1)^kC_{k}^{k}x^k = \sum_{k = 0}^{+\infty}(-x)^k$$</p>
+<p>这是显然正确的，运用等比数列求和即可证明。</p>
+<p>然后问题就是找到一个分式满足展开后的形式满足$\{a_n\}$的递推式。这是很困难的，还好有前人已经找出来了。</p>
+<p>首先我们有如下式子：</p>
+<p>$$(1 - x^r)^a = \sum_{k = 0}^{+\infty}C_{-a + k - 1}^{k}x^{rk}, a &lt;  0$$</p>
+<p>考虑计算</p>
+<p>$$\prod_{i = 1}^{+\infty}(1 - x^i)^{-a_i}$$</p>
+<p>的展开式中$x^n$项的系数，我们可以枚举这$n$个$x$分别来自于哪一项，这里就和上面分析子树的那一段一模一样了。最后的结果我们也很熟悉，就是</p>
+<p>$$\sum_{\sum_{i = 1}^{n}(ic_i) = n}\left (\prod_{i = 1}^{n}C_{a_i + c_i - 1}^{c_i}\right)$$</p>
+<p>它恰好等于$a_{n + 1}$，为了满足生成函数的，我们把它乘上一个$x$，就得到生成函数$A$了：</p>
+<p>$$A(x) = \frac{x}{\prod_{i = 1}^{+\infty}(1 - x^i)^{a_i}}$$</p>
+<p>然而这并没有卵用，毕竟右面还是有无限项，不要慌嘛。我们把两边都取个对数看看：</p>
+<p>$$\ln A(x) = \ln x - \sum_{i = 1}^{+\infty}a_i\ln(1 - x^i)<br>= \ln x + \sum_{i = 1}^{+\infty}a_i\ln(\frac{1}{1 - x^i})$$</p>
+<p>注意到右面有出现了分式，还是在对数里面，我们考虑积分相关的知识。为了方便，这里直接把$x^i$作为积分变量，设$t = x^i$，那么由于$(\ln\dfrac{1}{1 - t})‘ = \dfrac{1}{1 - t}$，所以$\int\dfrac{1}{1 - t}dt = \ln\dfrac{1}{1 - t}$，所以</p>
+<p>$$\ln\frac{1}{1 - t} = \int\frac{1}{1 - t}dt = \int\sum_{k = 0}^{+\infty}t^k = \sum_{k = 1}^{+\infty}\frac{1}{k}t^{k}$$</p>
+<p>带回上式就是</p>
+<p>$$\ln A(x) = \ln x + \sum_{i = 1}^{+\infty}\left(a_i\sum_{k = 1}^{+\infty}\frac{1}{k}x^{ik}\right)$$</p>
+<p>交换一下求和符号，就是</p>
+<p>$$\ln A(x) = \ln x + \sum_{k = 1}^{+\infty}\left(\frac{\sum_{i = 1}^{+\infty}a_ix^{ik}}{k}\right)$$</p>
+<p>根据生成函数的定义，可以化为</p>
+<p>$$\ln A(x) = \ln x + \sum_{k = 1}^{+\infty}\left(\frac{A(x^k)}{k}\right)$$</p>
+<p>这已经很漂亮了，我们考虑两边再取一下指数。为了方便，定义$\exp(x) = e^x$：</p>
+<p>$$A(x) = x\exp\left(\sum_{k = 1}^{+\infty}\left(\frac{A(x^k)}{k}\right)\right)$$</p>
+<p>然后对两边求导得到</p>
+<p>$$A’(x) = \exp\left(\sum_{k = 1}^{+\infty}\left(\frac{A(x^k)}{k}\right)\right) + x\exp\left(\sum_{k = 1}^{+\infty}\left(\frac{A(x^k)}{k}\right)\right)\left(\sum_{k = 1}^{+\infty}\left(\frac{A(x^k)}{k}\right)\right)‘$$</p>
+<p>又因为</p>
+<p>$$\frac{A(x)}{x} = \exp\left(\sum_{k = 1}^{+\infty}\left(\frac{A(x^k)}{k}\right)\right)$$</p>
+<p>所以</p>
+<p>$$A’(x) = \frac{A(x)}{x} + A(x)\left(\sum_{k = 1}^{+\infty}\left(\frac{A(x^k)}{k}\right)\right)‘$$</p>
+<p>把右面的那一坨东西用一下求导公式，就成了</p>
+<p>$$\frac{dA(x)}{d(x)} = \frac{A(x)}{x} + A(x)\left(\sum_{k = 1}^{+\infty}\left( x^{k - 1}\frac{dA(x^k)}{d(x^k)}\right)\right)$$</p>
+<p>$$\frac{dA(x)}{d(x)} - \frac{A(x)}{x} = A(x)\left(\sum_{k = 1}^{+\infty}\left( x^{k - 1}\frac{dA(x^k)}{d(x^k)}\right)\right)$$</p>
+<p>根据多项式求导的计算方法，我们可以展开成这样：</p>
+<p>$$\sum_{i = 0}^{+\infty}(i + 1)a_{i + 1}x^i - \sum_{i = 0}^{+\infty}a_{i + 1}x^i = \left(\sum_{i = 0}^{+\infty}a_{i}x^i\right)\left(\sum_{k = 1}^{+\infty}\left( x^{k - 1}\sum_{j = 1}^{+\infty}ja_jx^{k(j - 1)}\right)\right)$$</p>
+<p>稍微变形一下就是</p>
+<p>$$\sum_{i = 0}^{+\infty}ia_{i + 1}x^i = \left(\sum_{i = 0}^{+\infty}a_{i}x^i\right)\left(\sum_{j = 1}^{+\infty}\left( ja_j\sum_{k = 1}^{+\infty}x^{jk - 1}\right)\right)$$</p>
+<p>现在我们只考虑$a_{n + 1}$。显然还需要枚举一下不同的$j$，假设确定了$j$，那么对于每一个合法的$k$，对应的$i$也是唯一确定的，所以我们有</p>
+<p>$$na_{n + 1} = \sum_{j = 1}^{n}ja_j\sum_{k = 1}^{\lfloor \frac{n}{j} \rfloor}a_{n + 1 - jk}$$</p>
+<p>也就是</p>
+<p>$$a_{n + 1} = \frac{1}{n}\sum_{j = 1}^{n}ja_j\sum_{k = 1}^{\lfloor \frac{n}{j} \rfloor}a_{n + 1 - jk}$$</p>
+<p>这样的递推关系就很显然了嘛！只需要枚举$j, k$就好了。</p>
+<h4 id="待续。。。。。。"><a href="#待续。。。。。。" class="headerlink" title="待续。。。。。。"></a>待续。。。。。。</h4>
       
     </div>
     
@@ -1131,7 +1220,7 @@ bb
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 </div>
@@ -1143,14 +1232,14 @@ bb
                 2016 常可
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
+                        <span id="site-visit" >Site Visitors: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -1160,7 +1249,7 @@ bb
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
+                        <span id="page-visit">Page Hits: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -1214,9 +1303,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
