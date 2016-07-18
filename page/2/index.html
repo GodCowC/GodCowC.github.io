@@ -240,6 +240,96 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-HNSDFZ-shabiti" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/15/HNSDFZ-shabiti/" class="article-date">
+      <time datetime="2016-07-15T07:00:00.000Z" itemprop="datePublished">2016-07-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/15/HNSDFZ-shabiti/">『湖南省队集训』经典傻逼题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h4><p>这是一道经典傻逼题，对经典题很熟悉的人也不要激动，希望大家不要傻逼。</p>
+<p>考虑一张$n$个点的<u><b>带权无向图</b></u>，点的编号为$1$到$n$。对于图中的任意一个点集（可以为空或者全集），所有<u><b>恰好</b></u>有一个端点在这个点集中的边组成的集合被称为割。一个割的权值被定义为所有在这个割上的边的<u><b>异或和</b></u>。</p>
+<p>一开始这张图是空图，现在，考虑给这张无向图不断的加边，加入每条边之后，你都要求出当前权值<u><b>最大</b></u>的割的权值，注意加入的边永远都不会消失。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>从文件<font face="Times New Roman"><strong><em>shabiti.in</em></strong></font>中读入数据。</p>
+<p>输入的第一行包括一个数$id$表示数据编号，如第一组数据中的$id = 1$。注意样例数据中的$id = 0$。</p>
+<p>接下来的第一行包括两个整数$n, m$表示图的点数和总共加的边。</p>
+<p>接下来$m$行，每行三个正整数$x, y, w$表示在点$x$和点$y$之间加入一条权值为$w$的边。注意$x$和$y$可能相同，两条不同的边也可能连接了同一对点。</p>
+<p>此外，$w$将以<u><b>二进制形式从高位向低位</b></u>给出，比如，$6 = 110_2$，因此如果边权为$6$，那么$w$将会是$110$。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出到<font face="Times New Roman"><strong><em>shabiti.out</em></strong></font>中。</p>
+<p>输出$m$行，按顺序输出每一条边加入之后权值最大的割的权值。</p>
+<p>同样，你也要以<u><b>二进制形式</b></u>输出，形式和输入格式中描述的形式一样。</p>
+<h4 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 1"></a>样例输入 1</h4><pre><code>0
+3 6
+1 2 1
+1 2 1
+3 3 111
+1 3 101101
+1 2 1011
+2 3 111011
+</code></pre><h4 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 1"></a>样例输出 1</h4><pre><code>1
+0
+0
+101101
+101101
+110000
+</code></pre><h4 id="样例说明-1"><a href="#样例说明-1" class="headerlink" title="样例说明 1"></a>样例说明 1</h4><p>前三条边加入之后的答案较为显然，考虑后三条边，加入第六条边之前，考虑点集$\{1,2\}$，它对应的割只有第四条边，因此答案就是第四条边的权值，考虑加入最后一条边以后的情况，此时点集$\{1,2\}$对应的割变成了第四条边和第六条边组成的集合，权值也发生了相应的改变。点集$\{2\}$对应的割是第五条边和第六条边组成的集合，可以证明这就是权值最大的割，权值为$1011_2 \oplus 111011_2 = 110000_2$。</p>
+<h4 id="样例输入输出-2"><a href="#样例输入输出-2" class="headerlink" title="样例输入输出 2"></a>样例输入输出 2</h4><p>见下发的<a href="http://o8jc7x6dc.bkt.clouddn.com/shabiti/shabiti1.in" target="_blank" rel="external"><font face="Times New Roman"><strong><em>shabiti/shabiti1.in</em></strong></font></a>与<a href="http://o8jc7x6dc.bkt.clouddn.com/shabiti/shabiti1.ans" target="_blank" rel="external"><font face="Times New Roman"><strong><em>shabiti/shabiti1.ans</em></strong></font></a>。</p>
+<h4 id="样例说明-2"><a href="#样例说明-2" class="headerlink" title="样例说明 2"></a>样例说明 2</h4><p>这组数据满足最终形成的图中每个点的度数不超过$1$。</p>
+<h4 id="样例输入输出-3"><a href="#样例输入输出-3" class="headerlink" title="样例输入输出 3"></a>样例输入输出 3</h4><p>见下发的<a href="http://o8jc7x6dc.bkt.clouddn.com/shabiti/shabiti2.in" target="_blank" rel="external"><font face="Times New Roman"><strong><em>shabiti/shabiti2.in</em></strong></font></a>与<a href="http://o8jc7x6dc.bkt.clouddn.com/shabiti/shabiti2.ans" target="_blank" rel="external"><font face="Times New Roman"><strong><em>shabiti/shabiti2.ans</em></strong></font></a>。</p>
+<h4 id="数据规模和约定"><a href="#数据规模和约定" class="headerlink" title="数据规模和约定"></a>数据规模和约定</h4><p><u><b>设$l = \log_{2}w$。</b></u></p>
+<table><tr><td>数据点</td><td>$n$的规模</td><td>$m$的规模</td><td>$l$的规模</td><td>备注</td></tr><tr><td>$1$</td><td>$n \leq 20$</td><td>$m \leq 50$</td><td>$l &lt;  32$</td><td></td></tr><tr><td>$2$</td><td>$n \leq 20$</td><td>$m \leq 50$</td><td>$l &lt;  32$</td><td></td></tr><tr><td>$3$</td><td>$n \leq 200$</td><td>$m \leq 100$</td><td>$l &lt;  100$</td><td rowspan="3">最终形成的图中每个点的度数不超过$1$，且没有自环。</td></tr><tr><td>$4$</td><td>$n \leq500$</td><td>$m \leq 250$</td><td>$l &lt;  1000$</td></tr><tr><td>$5$</td><td>$n \leq500$</td><td>$m \leq 250$</td><td>$l &lt;  1000$</td></tr><tr><td>$6$</td><td>$n \leq 100$</td><td>$m \leq 200$</td><td>$l &lt;  300$</td><td></td></tr><tr><td>$7$</td><td>$n \leq 100$</td><td>$m \leq 200$</td><td>$l &lt;  300$</td><td></td></tr><tr><td>$8$</td><td>$n \leq 500$</td><td>$m \leq 1000$</td><td>$l &lt;  1000$</td><td></td></tr><tr><td>$9$</td><td>$n \leq 500$</td><td>$m \leq 1000$</td><td>$l &lt;  1000$</td><td></td></tr><tr><td>$10$</td><td>$n \leq 500$</td><td>$m \leq 1000$</td><td>$l &lt;  1000$</td><td></td></tr></table>
+
+<p>对于所有数据，$1 \leq n \leq 500$，$1 \leq m \leq 1000$，$0 \leq l &lt;  1000$，$1 \leq x, y \leq n$。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HNSDFZ-shuiti" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -425,7 +515,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2016/07/14/HApeixunguncu/#more">阅读全文 >></a>
+          <a href="/2016/07/14/HApeixunguncu/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -493,7 +583,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2016/07/14/HA2016-af-idol/#more">阅读全文 >></a>
+          <a href="/2016/07/14/HA2016-af-idol/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -939,78 +1029,6 @@ Math Error
 6
 1
 </code></pre><h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><table><tr><td></td><td>操作$1$</td><td>操作$2$</td><td>操作$3$</td></tr><tr><td>$1 \sim 4$</td><td rowspan="4">操作个数$&lt; 501$。保证$y, z, p &lt;  10^9$。</td><td>操作个数为$0$。</td><td>操作个数为$0$。</td></tr><tr><td>$5 \sim 10$</td><td>操作个数$&lt; 51$。保证$y, z, P &lt;  10^3$。$P$不一定为质数。</td><td>操作个数$&lt; 11$。保证$y, z &lt;  10^3, P &lt;  10^9$。$P$不一定为质数。</td></tr><tr><td>$11 \sim 16$</td><td>操作个数$&lt; 31$。保证$y, z, P &lt;  10^9$。而且$P$为质数。</td><td>操作个数$&lt; 31$。保证$y, z &lt;  10^7, P &lt;  10^5$。而且$P$为质数。</td></tr><tr><td>$17 \sim 20$</td><td>操作个数$&lt; 51$。保证$y, z, P &lt;  10^9$。$P$不一定为质数。</td><td>操作个数$&lt; 51$。保证$y, z &lt;  10^6, P &lt;  10^9$。$P$不为质数。</td></tr></table>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/滚粗/">滚粗</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-HNSDFZ-expectation" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/13/HNSDFZ-expectation/" class="article-date">
-      <time datetime="2016-07-13T06:00:00.000Z" itemprop="datePublished">2016-07-13</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/13/HNSDFZ-expectation/">『湖南省队集训』期望</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>在米国有一所大学，名叫万国歌剧与信息大学（Universal Opera and Informaticas University）。简称UOI大学。UOI大学的建筑与道路分布很有趣，每对建筑之间有且仅有一条直接或者间接的路径相连，更加明确的说，就是成树形分布。 其实在设计时，对于大学的$N$个建筑，总共有$M$条道路可以修建，每条道路都有一个距离值$Dist_i$和一个美学值$Value_i$。一个设计方案的距离值和美学值定义为该设计方案内包含的道路的距离值与美学值之和。投资方的要求只有设计方案的距离值最小。</p>
-<p>大神出于对树的喜爱所以决定设计方案必须是一棵树。 因为要参加UOI，所以当时大神就急急忙忙地随机选择了一个合法的方案。但其实存在很多合法的方案,假设每种设计方案取的概率是均等的，那么设计方案的美学值期望是多少？</p>
-<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行两个整数，$N$和$M$，意义如上所述。</p>
-<p>第二行到第$M+1$行，每行$4$个整数，$X_i, Y_i, Dist_i, Value_i$，分别表示这条道路连接的两个建筑的编号，距离值以及美学值。</p>
-<p>输入保证至少有一种合法方案。</p>
-<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>一行一个整数，即满足总道路长度最小的情况下，设计方案的美学值期望。 要求保留$5$位小数。</p>
-<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>2 1
-1 2 3 4
-</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>4.00000
-</code></pre><h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>$10\%$的数据保证$N \leq 10, M \leq 20$；</p>
-<p>$30\%$的数据保证$N \leq 100, M \leq 1000$；</p>
-<p>$100\%$的数据保证$N \leq 1000, M \leq 200000$；</p>
-<p>$10\%$的数据保证$M=N-1$；</p>
-<p>$20\%$的数据保证距离值相同的道路数小于$10$；</p>
-<p>$100\%$的数据保证距离值相同的道路数小于$30$，同时不保证没有重边。</p>
-
       
     </div>
     
